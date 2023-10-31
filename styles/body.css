@@ -1,0 +1,141 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #E9EAED;
+    color: #000; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.dark-mode {
+    background-color: #111111; 
+    color: #fff; 
+}
+
+#main-container{
+    padding: 20px;
+    background-color: #E9EAED;
+}
+
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+}
+
+footer {
+    background-color: #111111;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* SECTION*/
+.section{
+    background-color: #fff;
+    border-top-left-radius: 20px; 
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0;  
+    border-top-right-radius: 0;  
+    padding: 20px; 
+    margin: 1%;
+}
+
+/* VIDEO SECTION */
+#Video {
+    margin-top: 20px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 5fr);
+    gap: 5px;
+    justify-content: center;
+}
+
+.video-item {
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.video-item:hover {
+    background-color: #0984e3; /* Cambia il colore al passaggio del mouse */
+    color: #fff;
+    opacity: 0.9;
+}
+
+.video-iframe {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px; /* Imposta l'altezza massima dei loghi a 100px */
+}
+
+/* COLLABORATIONS SECTION*/
+#Collaborazioni {
+    margin-top: 20px;
+}
+
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.logo-item {
+    text-align: center;
+    margin: 10px; 
+    padding: 10px; 
+}
+
+.logo-item img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100px; 
+}
+
+p {
+    margin-top: 20px;
+}
+
+/* CONTACTS */
+.contacts{
+    padding:20px;
+}
+
+/* SUPPORT */ 
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding:20px;
+    justify-content: center;
+    text-align: center; /* Centra il testo orizzontalmente */
+}
+
+/* Stile dei collegamenti */
+.support-link {
+    text-decoration: none; /* Rimuovi la sottolineatura dei collegamenti */
+}
+
+/* Stile dei pulsanti all'interno dei collegamenti */
+.support-link .support-item {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Effetto hover: sfondo più chiaro e testo più scuro */
+.support-link .support-item:hover {
+    background-color: #0056b3;
+    color: #000;
+}

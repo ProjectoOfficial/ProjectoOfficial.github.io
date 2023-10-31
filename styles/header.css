@@ -1,0 +1,148 @@
+header img {
+    width: 100px;
+    height: auto; 
+    margin: 10px; 
+}
+
+header {
+    background-color: #111111;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.switch {
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #4caf50; 
+}
+
+.header__container {
+    display: flex;
+    align-items: center; 
+}
+
+/* DARK MODE SWITCH */
+.switch {
+    float: left;
+    position: relative;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f1c40f; 
+    transition: background-color 0.4s;
+}
+
+.switch input {
+    display: none;
+}
+
+.dark-mode .switch {
+    background-color: #34495e; 
+}
+
+.switch__slider i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #fff; 
+}
+
+.icon-dark {
+    display: none;
+    z-index: 1;
+}
+
+:not(input:checked) + .switch__slider .icon-dark {
+    display: none;
+}
+
+input:checked + .switch__slider .icon-light {
+    display: none;
+}
+
+/* SOCIALS */
+.social__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.social__list li {
+    width: 30px;
+    height: 30px;
+}
+
+.social__list i {
+    color: #fff;
+    font-size: 24px; 
+}
+
+
+/* SUPPORT */
+.support__list {
+    margin-left:auto;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.support__list li {
+    width: 30px;
+    height: 30px;
+}
+
+.support__list i {
+    color: white;
+    font-size: 24px; 
+}
+
+/* SECTIONS*/
+.sections {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Allinea orizzontalmente al centro */
+    height: 100%; /* Assicura che la sezione copra l'altezza del contenitore padre, se necessario */
+}
+
+.sections ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.sections li {
+    margin-right: 10px;
+}
+
+.sections a {
+    text-decoration: none;
+}
