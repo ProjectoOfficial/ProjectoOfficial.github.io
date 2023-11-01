@@ -142,6 +142,16 @@ footer {
     max-height: 500px; /* Imposta l'altezza massima dei loghi a 100px */
 }
 
+.video_views{
+    font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+    .video-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 /* COLLABORATIONS SECTION*/
 #Collaborazioni {
     margin-top: 20px;
@@ -183,15 +193,13 @@ footer {
     gap: 20px;
     padding:20px;
     justify-content: center;
-    text-align: center; /* Centra il testo orizzontalmente */
+    text-align: center; 
 }
 
-/* Stile dei collegamenti */
 .support-link {
-    text-decoration: none; /* Rimuovi la sottolineatura dei collegamenti */
+    text-decoration: none; 
 }
 
-/* Stile dei pulsanti all'interno dei collegamenti */
 .support-link .support-item {
     background-color: #007BFF;
     color: #fff;
@@ -202,8 +210,13 @@ footer {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Effetto hover: sfondo più chiaro e testo più scuro */
 .support-link .support-item:hover {
     background-color: #0056b3;
     color: #000;
+}
+
+@media (max-width: 1000px) {
+    .support-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
