@@ -131,15 +131,14 @@ footer {
 }
 
 .video-item:hover {
-    background-color: #0984e3; /* Cambia il colore al passaggio del mouse */
-    color: #fff;
+    background-color: #E9EAED;
     opacity: 0.9;
 }
 
 .video-iframe {
     max-width: 100%;
     height: auto;
-    max-height: 500px; /* Imposta l'altezza massima dei loghi a 100px */
+    max-height: 500px;
 }
 
 .video_views{

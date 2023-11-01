@@ -16,3 +16,8 @@
     transition: background-color 0.5s, color 0.5s;
 }
 
+.dark-mode .video-item:hover {
+    background-color: #222;
+    color: #fff; 
+    opacity: 0.9;
+}
