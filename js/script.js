@@ -1,7 +1,6 @@
 // Recupera il toggle e il body del documento
 const darkModeToggle = document.getElementById("darkModeToggle");
 const body = document.body;
-const container = document.getElementById("main-container");
 
 // Verifica il valore iniziale del toggle
 if (localStorage.getItem("darkMode") === "enabled") {
@@ -23,10 +22,8 @@ darkModeToggle.addEventListener("change", () => {
 // Funzioni per abilitare e disabilitare la modalità scura
 function enableDarkMode() {
     body.classList.add("dark-mode");
-    container.classList.add("dark-mode");
 }
 
 function disableDarkMode() {
     body.classList.remove("dark-mode");
-    container.classList.remove("dark-mode");
 }

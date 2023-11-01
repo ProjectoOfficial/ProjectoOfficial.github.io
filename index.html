@@ -10,6 +10,7 @@
     
     <link rel="stylesheet" type="text/css" href="styles/header.css">
     <link rel="stylesheet" type="text/css" href="styles/body.css">
+    <link rel="stylesheet" type="text/css" href="styles/darkmode.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
@@ -76,6 +77,7 @@
             
             <div class="sections"> 
                 <ul>
+                    <li><a href="#Storia">Storia</a></li>
                     <li><a href="#ChiSiamo">Chi Siamo</a></li>
                     <li><a href="#Video">Video</a></li>
                     <li><a href="#Collaborazioni">Collaborazioni</a></li>
@@ -88,13 +90,31 @@
     </header>
 
     <body>
-        <div id="main-container">
+        <div id="main_container">
             <h1>Benvenuti nella pagina web di Projecto!</h1>
             <p>Una sola pagina per fornirti tutte le informazioni che ti servono!</p>
 
+            <section id="Storia" class="section">
+                <h2>La nostra Storia</h2>
+                <div>
+                    <div>
+                        <div class="logo_storia">
+                            <img src="media/images/LOGOPNG.png" alt="Logo Projecto">
+                        </div>
+                        <div class="descrizione">
+                            <h4>Projecto</h3>
+                            <p>Nasce in una scuola di Reggio Emilia a seguito di un progetto didattico a solo scopo di apprendimento delle tecniche di programmazione web.
+                                Nel tempo Projecto cresce passando prima da qualche centinaio di iscritti, aumentati poi a migliaia, fino a decine di migliaia. Projecto è
+                                il canale YouTube Italiano con a dietro un Team di Ingegneri Informatici che offrono, gratuitamente, contenuti formativi in ambito di Informatica,
+                                Elettronica e Ingegneria.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section id="ChiSiamo" class="section">
                 <h2>Il Team di Projecto</h2>
-                <div class="chi-siamo">
                     <div class="utente">
                         <div class="foto">
                             <img src="media/chisiamo/DANIEL.JPG" alt="Foto Daniel">
@@ -167,7 +187,7 @@
                         <img src="media/collaborations/saleae.png" alt="Logo Saleae">
                     </div>
                 </div>
-                <p style="padding:10px;">Un grazie di cuore va alle aziende che hanno creduto in noi! Per noi è molto importante riuscire anche a supportare quelle aziende che sviluppano prodotti
+                <p class="acknowledgement">Un grazie di cuore va alle aziende che hanno creduto in noi! Per noi è molto importante riuscire anche a supportare quelle aziende che sviluppano prodotti
                     innovativi e potenzialmente utili ai nostri spettatori, garantendo un'altissima qualità, supporto e continuità dei prodotti.
                 </p>
             </section>
@@ -203,7 +223,8 @@
                 <div class="contacts">
                     <h4>Contatti</h4>
                         <ul>
-                            <li><b>e-mail</b>: MiniProjectsOfficial@gmail.com</li>
+                            <li><b>e-mail</b>: <a href="mailto:MiniProjectsOfficial@gmail.com">MiniProjectsOfficial@gmail.com</a></li>
+
                         </ul>
                 </div>
             </section>

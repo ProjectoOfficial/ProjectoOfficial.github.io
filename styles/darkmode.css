@@ -1,0 +1,18 @@
+.dark-mode {
+    background-color: #111111; 
+    color: #fff; 
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-mode .section {
+    background-color: #0c0c0c; 
+    color: #fff; 
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-mode #main_container {
+    background-color: #222; 
+    color: #fff; 
+    transition: background-color 0.5s, color 0.5s;
+}
+
