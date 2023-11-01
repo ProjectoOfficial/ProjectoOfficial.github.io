@@ -181,6 +181,12 @@ footer {
     padding:10px;
 }
 
+@media (max-width: 1000px) {
+    .logo-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 /* CONTACTS */
 .contacts{
     padding:20px;
