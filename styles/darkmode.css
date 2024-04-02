@@ -21,3 +21,36 @@
     color: #fff; 
     opacity: 0.9;
 }
+
+.dark-mode .form-control {
+    color: white;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.dark-mode .form-control::placeholder {
+    color: #6c757d; 
+}
+
+.dark-mode .form-control:focus::placeholder {
+    color: #6c757d; 
+}
+
+.dark-mode .form-control:-moz-placeholder {
+    color: #6c757d;
+}
+
+
+.dark-mode .form-control:-ms-input-placeholder {
+    color: #6c757d;
+}
+
+.dark-mode .form-control::-webkit-input-placeholder {
+    color: #6c757d; 
+}
+
+.dark-mode .form-control:focus {
+    color: white;
+    background-color: #343a40; 
+    border-color: #343a40; 
+}

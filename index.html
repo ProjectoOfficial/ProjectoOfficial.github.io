@@ -87,6 +87,7 @@
                     <li><a href="#Collaborazioni">Collaborazioni</a></li>
                     <li><a href="#Contatti">Contatti</a></li>
                     <li><a href="#Supporto">Supporto</a></li>
+                    <li><a href="#Consulenza">Consulenza</a></li>
                 </ul>
             </div>
 
@@ -244,12 +245,55 @@
                 </div>
             </section>
 
+            <section id="Consulenza" class="section">
+                <h2 class="my-4">Richiesta di Consulenza</h2>
+                <ul>
+                    <li>Qui ti offriamo la possibilità di richiedere consulenza specializzata per avviare un nuovo progetto o per ottimizzare un 
+                        servizio o prodotto già esistente. Ti invitiamo a compilare il modulo sottostante fornendo il tuo nome (e, se applicabile, 
+                        il nome dell'azienda), l'indirizzo email al quale desideri essere contattato e una breve descrizione dell'obiettivo che desideri 
+                        raggiungere attraverso il nostro supporto tecnico. Saremo lieti di mettere a tua disposizione la nostra esperienza e competenza 
+                        per garantire il successo del tuo progetto informatico.
+                    </li>
+                    <li>
+                        Attualmente, offriamo consulenza specializzata nell'ambito dell'Intelligenza Artificiale, concentrandoci principalmente 
+                        sulla Computer Vision. I nostri servizi comprendono la <i>classificazione di immagini</i>, il <i>rilevamento di oggetti</i> all'interno 
+                        di esse, la <i>stima della profondità</i> di un'immagine in metri, la <i>ricostruzione di scene tridimensionali</i> e molte altre soluzioni. 
+                        Siamo pronti ad affrontare le sfide più complesse nel campo della visione artificiale e ad offrire le nostre competenze per 
+                        soddisfare le tue esigenze specifiche.
+                    </li>
+                    <li>
+                        La richiesta di contatto e la risposta ad essa sono fornite gratuitamente. Tuttavia, si tenga presente che le consulenze sono un servizio a pagamento. 
+                        Il costo delle consulenze verrà comunicato successivamente, una volta ricevuta e valutata la richiesta effettuata tramite questo modulo.
+                    </li>
+                </ul>
+                <br />
+
+                <form action="https://formspree.io/f/myyrnvnp" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="nome">Il tuo Nome:</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">La tua email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="messaggio">Cosa ti piacerebbe concretizzare:</label>
+                        <textarea class="form-control" id="messaggio" name="messaggio" rows="4" required></textarea>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary">Invia</button>
+                    </div>
+                </form>
+            </section>
+
         </div>
+   
         <button id="scrollToTopBtn">Torna su</button>
     </body>
 
     <footer>
-        <p>&copy; 2023 Projecto</p>
+        <p>&copy; 2024 ProjectoOfficial.github.io</p>
     </footer>
 
     <script src="js/script.js" defer></script>

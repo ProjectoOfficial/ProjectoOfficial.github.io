@@ -129,8 +129,8 @@ input:checked + .switch__slider .icon-light {
 .sections {
     display: flex;
     align-items: center;
-    justify-content: center; /* Allinea orizzontalmente al centro */
-    height: 100%; /* Assicura che la sezione copra l'altezza del contenitore padre, se necessario */
+    justify-content: center;
+    height: 100%; 
 }
 
 .sections ul {
