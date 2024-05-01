@@ -28,7 +28,14 @@
             <text>I Nostri Video Migliori</text> 
         </element>
 
-        <!-- Aggiungi altri elementi qui -->
+        <element id="title_collaborations">
+            <text>Le Aziende con cui abbiamo Collaborato</text> 
+        </element>
+        
+        <element id="text_collaborations">
+            <text>Un grazie di cuore va alle aziende che hanno creduto in noi! Per noi è molto importante riuscire anche a supportare quelle aziende che sviluppano prodotti innovativi e potenzialmente utili ai nostri spettatori, garantendo un'altissima qualità, supporto e continuità dei prodotti.</text>
+        </element>
+
     </translation>
 
     <translation lang="en">
@@ -60,6 +67,13 @@
             <text>Our Best Videos</text> 
         </element>
 
-        <!-- Aggiungi altri elementi qui -->
+        <element id="title_collaborations">
+            <text>The Companies with which we have collaborated</text> 
+        </element>
+
+        <element id="text_collaborations">
+            <text>A heartfelt thanks goes to the companies that believed in us! For us it is very important to be able to support those companies that develop innovative products and potentially useful to our viewers, ensuring the highest quality, support and continuity of products.</text>
+        </element>
+
     </translation>
 </translations>
