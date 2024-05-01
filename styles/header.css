@@ -89,6 +89,33 @@ input:checked + .switch__slider .icon-light {
     display: none;
 }
 
+/* LANGUAGE SELECT */
+select.form-control {
+    margin-right:10px; /* top right bottom left */
+  }
+
+select.form-control {
+background-color: #fff;
+color: #495057;
+border: 1px solid #ced4da;
+border-radius: .25rem;
+transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+select.form-control:hover {
+border-color: #80bdff;
+outline: 0;
+box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+select.form-control {
+    width: 100px; 
+  }
+  
+select.form-control {
+max-width: 150px; 
+}
+
 /* SOCIALS */
 .social__list {
     list-style: none;

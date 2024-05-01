@@ -1,0 +1,65 @@
+<translations>
+    <translation lang="it">
+        <element id="text_welcome">
+            <text>Benvenuti nella pagina web di Projecto!</text>
+        </element>
+
+        <element id="text_quickinfo">
+            <text>Una sola pagina per fornirti tutte le informazioni che ti servono!</text>
+        </element>
+
+        <element id="title_history">
+            <text>La nostra Storia</text>
+        </element>
+
+        <element id="text_history">
+            <text>Nasce in una scuola di Reggio Emilia a seguito di un progetto didattico a solo scopo di apprendimento delle tecniche di programmazione web. Nel tempo Projecto cresce passando prima da qualche centinaio di iscritti, aumentati poi a migliaia, fino a decine di migliaia. Projecto è il canale YouTube Italiano con a dietro un Team di Ingegneri Informatici che offrono, gratuitamente, contenuti formativi in ambito di Informatica, Elettronica e Ingegneria.</text>
+        </element>
+
+        <element id="text_daniel">
+            <text>Laureatosi prima in Ingegneria Informatica e poi in Artificial Intelligence Engineering con il massimo dei voti presso l'Università di Modena e Reggio Emilia, svolge ora il ruolo di Dottorando in ICT presso il laboratorio di <a href="https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=174">AImageLab</a> di UniMoRe.</text>
+        </element>
+
+        <element id="text_alberto">
+            <text>Studente di Ingegneria Informatica presso l'Università degli Studi di Bologna.</text>
+        </element>
+
+        <element id="title_video">
+            <text>I Nostri Video Migliori</text> 
+        </element>
+
+        <!-- Aggiungi altri elementi qui -->
+    </translation>
+
+    <translation lang="en">
+        <element id="text_welcome">
+            <text>Welcome to the Projecto web page!</text>
+        </element>
+
+        <element id="text_quickinfo">
+            <text>One page to give you all the information you need!</text>
+        </element>
+
+        <element id="title_history">
+            <text>Our History</text>
+        </element>
+
+        <element id="text_history">
+            <text>Born in a school in Reggio Emilia following a didactic project for the sole purpose of learning web programming techniques. Over time Projecto grew from a few hundred members, then increased to thousands, up to tens of thousands. Projecto is the Italian YouTube channel with a team of Computer Engineers behind that offer, free of charge, educational content in the field of Computer Science, Electronics and Engineering.</text>
+        </element>
+
+        <element id="text_daniel">
+            <text>Graduated first in Computer Engineering and then in Artificial Intelligence Engineering with the highest marks at the University of Modena and Reggio Emilia, now plays the role of PhD student in ICT at the laboratory <a href="https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=174">AImageLab</a> by UniMoRe.</text>
+        </element>
+
+        <element id="text_alberto">
+            <text>Student of Computer Engineering at the University of Bologna.</text>
+        </element>
+
+        <element id="title_video">
+            <text>Our Best Videos</text> 
+        </element>
+
+        <!-- Aggiungi altri elementi qui -->
+    </translation>
+</translations>
