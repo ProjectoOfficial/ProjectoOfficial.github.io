@@ -220,6 +220,12 @@ footer {
     color: #000;
 }
 
+.button-support{
+    color: transparent; 
+    background-color: transparent; 
+    border: none; 
+}
+
 @media (max-width: 1200px) {
     .support-grid {
         grid-template-columns: repeat(1, 1fr);

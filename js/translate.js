@@ -14,7 +14,7 @@ function loadTranslationsXML(callback) {
                     const elementMap = {};
                     for (let j = 0; j < elements.length; j++) {
                         const id = elements[j].getAttribute("id");
-                        const text = elements[j].getElementsByTagName("text")[0].textContent;
+                        const text = elements[j].getElementsByTagName("text")[0].innerHTML;
                         elementMap[id] = text;
                     }
                     translationMap[lang] = elementMap;
