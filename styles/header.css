@@ -92,8 +92,8 @@ input:checked + .switch__slider .icon-light {
 /* LANGUAGE SELECT */
 select.form-control {
     margin-right:10px; 
-    width: 50px; 
-    max-width: 100px; 
+    width: 80px; 
+    max-width: 120px; 
   }
 
 select.form-control {
