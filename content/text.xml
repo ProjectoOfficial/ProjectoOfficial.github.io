@@ -45,7 +45,7 @@
         </element>
 
         <element id="text_daniel">
-            <text>Laureatosi prima in Ingegneria Informatica e poi in Artificial Intelligence Engineering con il massimo dei voti presso l'Università di Modena e Reggio Emilia, svolge ora il ruolo di Dottorando in ICT presso il laboratorio di <a href="https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=174">AImageLab</a> di UniMoRe.</text>
+            <text>Laureatosi prima in Ingegneria Informatica e poi in Artificial Intelligence Engineering con il massimo dei voti presso l'Università di Modena e Reggio Emilia, svolge ora il ruolo di Dottorando in ICT presso il laboratorio di <a href="https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=174">AImageLab</a> di UniMoRe. Svolge ricerca scientifica in temi riguardanti la Human Pose Estimation, l'interconnessione tra sistemi biologici e reti neurali, e l'efficientamento di metodi di Computer Vision applicati a soluzioni embedded</text>
         </element>
 
         <element id="text_alberto">
@@ -243,7 +243,7 @@
         </element>
 
         <element id="text_daniel">
-            <text>Graduated first in Computer Engineering and then in Artificial Intelligence Engineering with the highest marks at the University of Modena and Reggio Emilia, now plays the role of PhD student in ICT at the laboratory <a href="https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=174">AImageLab</a> by UniMoRe.</text>
+            <text>Graduated first in Computer Engineering and then in Artificial Intelligence Engineering with honors at the University of Modena and Reggio Emilia, now plays the role of PhD student in ICT at the laboratory <a href="https://aimagelab.ing.unimore.it/imagelab/person.asp?idpersona=174">AImageLab</a> by UniMoRe. He carries out scientific research on topics related to Human Pose Estimation, the interconnection between biological systems and neural networks, and the efficiency of Computer Vision methods applied to embedded solutions</text>
         </element>
 
         <element id="text_alberto">
@@ -371,7 +371,7 @@
         </element>
 
         <element id="form_consultingname">
-            <text>Your Company Name:</text>
+            <text>Your Personal or Company Name:</text>
         </element>
 
         <element id="form_consultingemail">
