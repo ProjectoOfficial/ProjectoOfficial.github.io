@@ -8,12 +8,40 @@
             <text>Una sola pagina per fornirti tutte le informazioni che ti servono!</text>
         </element>
 
+        <element id="link_history">
+            <text>Storia</text>
+        </element>
+
+        <element id="link_videos">
+            <text>Video</text>
+        </element>
+
+        <element id="link_collaborations">
+            <text>Collaborazioni</text>
+        </element>
+
+        <element id="link_contacts">
+            <text>Contatti</text>
+        </element>
+
+        <element id="link_support">
+            <text>Supporto</text>
+        </element>
+
+        <element id="link_consulting">
+            <text>Consulenza</text>
+        </element>
+
         <element id="title_history">
             <text>La nostra Storia</text>
         </element>
 
         <element id="text_history">
             <text>Nasce in una scuola di Reggio Emilia a seguito di un progetto didattico a solo scopo di apprendimento delle tecniche di programmazione web. Nel tempo Projecto cresce passando prima da qualche centinaio di iscritti, aumentati poi a migliaia, fino a decine di migliaia. Projecto è il canale YouTube Italiano con a dietro un Team di Ingegneri Informatici che offrono, gratuitamente, contenuti formativi in ambito di Informatica, Elettronica e Ingegneria.</text>
+        </element>
+
+        <element id="title_team">
+            <text>Il Team di Projecto</text>
         </element>
 
         <element id="text_daniel">
@@ -28,6 +56,10 @@
             <text>I Nostri Video Migliori</text> 
         </element>
 
+        <element id="text_numviews">
+            <text>Numero di visualizzazioni: </text>
+        </element>
+
         <element id="title_collaborations">
             <text>Le Aziende con cui abbiamo Collaborato</text> 
         </element>
@@ -36,6 +68,29 @@
             <text>Un grazie di cuore va alle aziende che hanno creduto in noi! Per noi è molto importante riuscire anche a supportare quelle aziende che sviluppano prodotti innovativi e potenzialmente utili ai nostri spettatori, garantendo un'altissima qualità, supporto e continuità dei prodotti.</text>
         </element>
 
+        <element id="title_contacts">
+            <text>Come Contattarci</text>
+        </element>
+
+        <element id="text_contactsrequirements">
+            <text>Requisiti</text>
+        </element>
+
+        <element id="text_contactswhere">
+            <text><b>Dove</b>: gli indirizzi di contatto sono espressi nella sotto-sezione <i>Contatti</i>. Non risponderemo a messaggi inviati su qualsiasi altro tipo di piattaforme</text>
+        </element>
+
+        <element id="text_contactswhy">
+            <text><b>Perché</b>: rispondiamo esclusivamente a richieste di collaborazione, consulenze o sponsorizzazione di prodotti. Qualsiasi altro tipo di richiesta non sarà presa in considerazione</text>
+        </element>
+
+        <element id="text_contactshow">
+            <text><b>Come</b>: chiediamo che il contenuto del messaggio sia preciso e sintetico, espresso in modo professionale e basato su qualcosa di concreto</text>
+        </element>
+
+        <element id="text_contactswhen">
+            <text><b>Quando</b>: è possibile contattare in qualsiasi momento, riceverete risposta in orario lavorativo ordinario settimanale, in tempi brevi</text>
+        </element>
     </translation>
 
     <translation lang="en">
@@ -47,12 +102,40 @@
             <text>One page to give you all the information you need!</text>
         </element>
 
+        <element id="link_history">
+            <text>History</text>
+        </element>
+
+        <element id="link_videos">
+            <text>Videos</text>
+        </element>
+
+        <element id="link_collaborations">
+            <text>Collaborations</text>
+        </element>
+
+        <element id="link_contacts">
+            <text>Contacts</text>
+        </element>
+
+        <element id="link_support">
+            <text>Support</text>
+        </element>
+
+        <element id="link_consulting">
+            <text>Consulting</text>
+        </element>
+
         <element id="title_history">
             <text>Our History</text>
         </element>
 
         <element id="text_history">
             <text>Born in a school in Reggio Emilia following a didactic project for the sole purpose of learning web programming techniques. Over time Projecto grew from a few hundred members, then increased to thousands, up to tens of thousands. Projecto is the Italian YouTube channel with a team of Computer Engineers behind that offer, free of charge, educational content in the field of Computer Science, Electronics and Engineering.</text>
+        </element>
+        
+        <element id="title_team">
+            <text>The Team behind Projecto</text>
         </element>
 
         <element id="text_daniel">
@@ -67,6 +150,10 @@
             <text>Our Best Videos</text> 
         </element>
 
+        <element id="text_numviews">
+            <text>number of views: </text>
+        </element>
+
         <element id="title_collaborations">
             <text>The Companies with which we have collaborated</text> 
         </element>
@@ -75,5 +162,29 @@
             <text>A heartfelt thanks goes to the companies that believed in us! For us it is very important to be able to support those companies that develop innovative products and potentially useful to our viewers, ensuring the highest quality, support and continuity of products.</text>
         </element>
 
+        <element id="title_contacts">
+            <text>How to Contact Us</text>
+        </element>
+
+        <element id="text_contactsrequirements">
+            <text>Requirements</text>
+        </element>
+
+        <element id="text_contactswhere">
+            <text><b>Where</b>: Contact addresses are expressed in the sub-section <i>Contacts</i>. We will not respond to messages sent on any other type of platforms</text>
+        </element>
+
+        <element id="text_contactswhy">
+            <text><b>Why</b>: We only respond to requests for collaboration, advice or product sponsorship. Any other request will not be considered</text>
+        </element>
+
+        <element id="text_contactshow">
+            <text><b>How</b>: we ask that the content of the message be precise and concise, expressed professionally and based on something concrete</text>
+        </element>
+
+        <element id="text_contactswhen">
+            <text><b>When</b>: you can contact at any time, you will receive response in regular weekly business hours, in a short time</text>
+        </element>
     </translation>
+
 </translations>
