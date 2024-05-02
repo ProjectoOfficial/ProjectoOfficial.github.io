@@ -112,6 +112,85 @@
             <text>Richiedere prestazioni di lavoro non retribuito: Marameo ;)</text>
         </element>
 
+        <element id="text_sponsorships">
+            <text>Sponsorizzazioni</text>
+        </element>
+
+        <element id="text_sponsorshipsl1">
+            <text>Non prendiamo parte ad alcuna sponsorizzazione che prevede la stipula di un contratto</text>
+        </element>
+
+        <element id="text_sponsorshipsl2">
+            <text>L'opinione espressa sull'oggetto della sponsorizzazione verrà espressa in modo libero</text>
+        </element>
+
+        <element id="text_sponsorshipsl3">
+            <text>Eventuali indirizzi e recapiti verranno forniti in privato e costituiscono informazioni sensibili non divulgabili, nè utilizzabili per scopi di indagine statistica</text>
+        </element>
+
+        <element id="text_sponsorshipsl4">
+            <text>A seguito della consegna di un prodotto o di un servizio relativo ad una richiesta di sponsorizzazione, il contenuto relativo nel quale avverrà il product placement avrà la priorità sugli altri</text>
+        </element>
+
+        <element id="text_contactsemail">
+            <text>Contatti</text> 
+        </element>
+
+        <element id="title_support">
+            <text>Come supportarci</text>
+        </element>
+
+        <element id="text_supportsubscription">
+            <text>Iscriviti al Canale!</text>
+        </element>
+
+        <element id="text_supportdonation">
+            <text>Fai una donazione!</text>
+        </element>
+
+        <element id="text_supportamazon">
+            <text>Liste Amazon</text>
+        </element>
+
+        <element id="text_supportprime">
+            <text>Iscriviti a Prime!</text>
+        </element>
+
+        <element id="text_supportstore">
+            <text>Visita lo Store!</text>
+        </element>
+
+        <element id="title_consulting">
+            <text>Richiesta di Consulenza</text>
+        </element>
+
+        <element id="text_consultingl1">
+            <text>Qui ti offriamo la possibilità di richiedere consulenza specializzata per avviare un nuovo progetto o per ottimizzare un servizio o prodotto già esistente. Ti invitiamo a compilare il modulo sottostante fornendo il tuo nome (e, se applicabile, il nome dell'azienda), l'indirizzo email al quale desideri essere contattato e una breve descrizione dell'obiettivo che desideri raggiungere attraverso il nostro supporto tecnico. Saremo lieti di mettere a tua disposizione la nostra esperienza e competenza per garantire il successo del tuo progetto informatico.</text>
+        </element>
+
+        <element id="text_consultingl2">
+            <text>Attualmente, offriamo consulenza specializzata nell'ambito dell'Intelligenza Artificiale, concentrandoci principalmente sulla Computer Vision. I nostri servizi comprendono la <i>classificazione di immagini</i>, il <i>rilevamento di oggetti</i> all'interno di esse, la <i>stima della profondità</i> di un'immagine in metri, la <i>ricostruzione di scene tridimensionali</i> e molte altre soluzioni. Siamo pronti ad affrontare le sfide più complesse nel campo della visione artificiale e ad offrire le nostre competenze per soddisfare le tue esigenze specifiche.</text>
+        </element>
+
+        <element id="text_consultingl3">
+            <text>La richiesta di contatto e la risposta ad essa sono fornite gratuitamente. Tuttavia, si tenga presente che le consulenze sono un servizio a pagamento. Il costo delle consulenze verrà comunicato successivamente, una volta ricevuta e valutata la richiesta effettuata tramite questo modulo.</text>
+        </element>
+
+        <element id="form_consultingname">
+            <text>Il tuo Nome o Nome dell'Azienda:</text>
+        </element>
+
+        <element id="form_consultingemail">
+            <text>La tua email:</text>
+        </element>
+
+        <element id="form_consultingdescription">
+            <text>Cosa ti piacerebbe concretizzare:</text>
+        </element>
+
+        <element id="button_scrollup">
+            <text>Torna Su!</text>
+        </element>
     </translation>
 
     <translation lang="en">
@@ -221,6 +300,86 @@
 
         <element id="text_contactswhattodol3">
             <text>Ask for unpaid work: Marameo ;)</text>
+        </element>
+
+        <element id="text_sponsorships">
+            <text>Sponsorships</text>
+        </element>
+
+        <element id="text_sponsorshipsl1">
+            <text>We do not take part in any sponsorship involving the conclusion of a contract</text>
+        </element>
+
+        <element id="text_sponsorshipsl2">
+            <text>The opinion expressed on the subject of sponsorship will be freely expressed</text>
+        </element>
+
+        <element id="text_sponsorshipsl3">
+            <text>Any addresses and addresses will be provided in private and constitute sensitive information not disclosed, nor usable for statistical survey purposes</text>
+        </element>
+
+        <element id="text_sponsorshipsl4">
+            <text>Following the delivery of a product or a service relating to a request for sponsorship, the relative content in which the product placement will take place will have priority over the other</text>
+        </element>
+
+        <element id="text_contactsemail">
+            <text>Contacts</text> 
+        </element>
+
+        <element id="title_support">
+            <text>How to support us</text>
+        </element>
+
+        <element id="text_supportsubscription">
+            <text>Subscribe to Channel! </text>
+        </element>
+
+        <element id="text_supportdonation">
+            <text>Make a donation! </text>
+        </element>
+
+        <element id="text_supportamazon">
+            <text>Amazon Lists</text>
+        </element>
+
+        <element id="text_supportprime">
+            <text>Subscribe to Prime! </text>
+        </element>
+
+        <element id="text_supportstore">
+            <text>Visit the Store! </text>
+        </element>
+
+        <element id="title_consulting">
+            <text>Request for Consulting</text>
+        </element>
+
+        <element id="text_consultingl1">
+            <text>Here we offer you the possibility to request specialized advice to start a new project or to optimize an existing service or product. Please complete the form below with your name (and, if applicable, company name), the email address you wish to be contacted and a brief description of the goal you wish to achieve through our technical support. We will be happy to provide you with our experience and expertise to ensure the success of your IT project. </text>
+        </element>
+
+        <element id="text_consultingl2">
+            <text>Currently, we offer specialized advice in the field of Artificial Intelligence, focusing mainly on Computer Vision. Our services include the <i>classification of images</i>, the <i>detection of objects</i> within them, the <i>estimate of the depth</i> of an image in meters, the <i>reconstruction of three-dimensional scenes</i> and many other solutions. We are ready to tackle the most complex challenges in the field of machine vision and offer our expertise to meet your specific needs. </text>
+        </element>
+
+        <element id="text_consultingl3">
+            <text>The contact request and the answer to it are provided free of charge. However, please note that advice is a paid service. The cost of consulting will be communicated later, once received and evaluated the request made through this form. </text>
+        </element>
+
+        <element id="form_consultingname">
+            <text>Your Company Name:</text>
+        </element>
+
+        <element id="form_consultingemail">
+            <text>Your email:</text>
+        </element>
+
+        <element id="form_consultingdescription">
+            <text>What you would like to realize:</text>
+        </element>
+
+        <element id="button_scrollup">
+            <text>Back to top!</text>
         </element>
     </translation>
 
