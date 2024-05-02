@@ -191,6 +191,10 @@
         <element id="button_scrollup">
             <text>Torna Su!</text>
         </element>
+
+        <element id="button_formsend">
+            <text>Invia</text>
+        </element>
     </translation>
 
     <translation lang="en">
@@ -380,6 +384,10 @@
 
         <element id="button_scrollup">
             <text>Back to top!</text>
+        </element>
+
+        <element id="button_formsend">
+            <text>Send</text>
         </element>
     </translation>
 
