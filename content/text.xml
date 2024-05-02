@@ -91,6 +91,27 @@
         <element id="text_contactswhen">
             <text><b>Quando</b>: è possibile contattare in qualsiasi momento, riceverete risposta in orario lavorativo ordinario settimanale, in tempi brevi</text>
         </element>
+
+        <element id="text_contactswhattodo">
+            <text>Cosa Non Fare</text>
+        </element>
+
+        <element id="text_contactswhattodo">
+            <text>Cosa Non Fare</text>
+        </element>
+
+        <element id="text_contactswhattodol1">
+            <text>Chiedere supporto per un progetto personale: noi purtroppo non siamo content creators a tempo pieno, ci scusiamo, ma purtroppo non abbiamo tempo per fornire questo servizio</text>
+        </element>
+
+        <element id="text_contactswhattodol2">
+            <text>Utilizzare l'e-mail di contatto per chiedere chiarimenti: preferiamo che eventuali chiarimenti su progetti o contenuti siano espressi nella sezione commenti del video corrispondente</text>
+        </element>
+
+        <element id="text_contactswhattodol3">
+            <text>Richiedere prestazioni di lavoro non retribuito: Marameo ;)</text>
+        </element>
+
     </translation>
 
     <translation lang="en">
@@ -184,6 +205,22 @@
 
         <element id="text_contactswhen">
             <text><b>When</b>: you can contact at any time, you will receive response in regular weekly business hours, in a short time</text>
+        </element>
+
+        <element id="text_contactswhattodo">
+            <text>What you should Not Do</text>
+        </element>
+
+        <element id="text_contactswhattodol1">
+            <text>Ask for support for a personal project: we unfortunately are not content creators full time, we apologize, but unfortunately we do not have time to provide this service</text>
+        </element>
+
+        <element id="text_contactswhattodol2">
+            <text>Use the contact email to ask for clarification: we prefer that any clarification about projects or content be expressed in the comments section of the corresponding video</text>
+        </element>
+
+        <element id="text_contactswhattodol3">
+            <text>Ask for unpaid work: Marameo ;)</text>
         </element>
     </translation>
 
