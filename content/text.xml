@@ -61,11 +61,35 @@
         </element>
 
         <element id="title_collaborations">
-            <text>Le Aziende con cui abbiamo Collaborato</text> 
+            <text>Collaborazioni</text> 
         </element>
         
         <element id="text_collaborations">
             <text>Un grazie di cuore va alle aziende che hanno creduto in noi! Per noi è molto importante riuscire anche a supportare quelle aziende che sviluppano prodotti innovativi e potenzialmente utili ai nostri spettatori, garantendo un'altissima qualità, supporto e continuità dei prodotti.</text>
+        </element>
+
+        <element id="text_collaborationswhat">
+            <text>Collaborazioni a cui siamo più interessati</text>
+        </element>
+
+        <element id="text_collaborations3dprint">
+            <text>Stampanti 3D di qualsiasi tipo, inclusi filamenti o resine</text>
+        </element>
+
+        <element id="text_collaborationspc">
+            <text>Componenti per computer/server, mini pc, in particolare GPU</text>
+        </element>
+
+        <element id="text_collaborationssolar">
+            <text>Componenti per impianti fotovoltaici come pannelli fotovoltaici, inverter e sistemi di accumulo</text>
+        </element>
+
+        <element id="text_collaborationscameras">
+            <text>Telecamere per progetti di computer vision come telecamere termiche o telecamere a visione notturna</text>
+        </element>
+
+        <element id="text_collaborationsother">
+            <text>Dispositivi elettronici o informatici interenti ai contenuti che trattiamo</text>
         </element>
 
         <element id="title_contacts">
@@ -173,7 +197,7 @@
         </element>
 
         <element id="text_consultingl3">
-            <text>La richiesta di contatto e la risposta ad essa sono fornite gratuitamente. Tuttavia, si tenga presente che le consulenze sono un servizio a pagamento. Il costo delle consulenze verrà comunicato successivamente, una volta ricevuta e valutata la richiesta effettuata tramite questo modulo.</text>
+            <text>La richiesta di contatto e la risposta ad essa sono fornite gratuitamente. Tuttavia, si tenga presente che <b>le consulenze sono un servizio a pagamento</b>. Il costo delle consulenze verrà comunicato successivamente, una volta ricevuta e valutata la richiesta effettuata tramite questo modulo.</text>
         </element>
 
         <element id="form_consultingname">
@@ -259,11 +283,35 @@
         </element>
 
         <element id="title_collaborations">
-            <text>The Companies with which we have collaborated</text> 
+            <text>Collaborations</text> 
         </element>
 
         <element id="text_collaborations">
             <text>A heartfelt thanks goes to the companies that believed in us! For us it is very important to be able to support those companies that develop innovative products and potentially useful to our viewers, ensuring the highest quality, support and continuity of products.</text>
+        </element>
+
+        <element id="text_collaborationswhatwhat">
+            <text>Collaborations we are most interested in</text>
+        </element>
+
+        <element id="text_collaborations3dprint">
+            <text>3D printers of any kind, including filaments or resins</text>
+        </element>
+
+        <element id="text_collaborationspc">
+            <text>Components for computers/servers, mini PCs, especially GPUs</text>
+        </element>
+
+        <element id="text_collaborationssolar">
+            <text>Components for photovoltaic systems such as photovoltaic panels, inverters and energy storage systems</text>
+        </element>
+
+        <element id="text_collaborationscameras">
+            <text>Cameras for computer vision projects such as thermal cameras or night vision cameras</text>
+        </element>
+
+        <element id="text_collaborationsother">
+            <text>Electronic or technological devices that are inherent to the topics we cover in our youtube channel</text>
         </element>
 
         <element id="title_contacts">
@@ -367,7 +415,7 @@
         </element>
 
         <element id="text_consultingl3">
-            <text>The contact request and the answer to it are provided free of charge. However, please note that advice is a paid service. The cost of consulting will be communicated later, once received and evaluated the request made through this form. </text>
+            <text>The contact request and the answer to it are provided free of charge. However, please note that <b>advice is a paid service</b>. The cost of consulting will be communicated later, once received and evaluated the request made through this form. </text>
         </element>
 
         <element id="form_consultingname">
