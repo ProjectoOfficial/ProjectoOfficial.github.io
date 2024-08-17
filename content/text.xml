@@ -37,7 +37,19 @@
         </element>
 
         <element id="text_history">
-            <text>Nasce in una scuola di Reggio Emilia a seguito di un progetto didattico a solo scopo di apprendimento delle tecniche di programmazione web. Nel tempo Projecto cresce passando prima da qualche centinaio di iscritti, aumentati poi a migliaia, fino a decine di migliaia. Projecto è il canale YouTube Italiano con a dietro un Team di Ingegneri Informatici che offrono, gratuitamente, contenuti formativi in ambito di Informatica, Elettronica e Ingegneria.</text>
+            <text>Nasce il 10 maggio 2016 nell'Istituto di Istruzione Superiore <i>Blaise Pascal</i> di Reggio Emilia a seguito di un progetto didattico a solo scopo di apprendimento delle tecniche di programmazione web. 
+                  Lo scopo del progetto fu quello di creare un Blog multilingua, programmato totalmente da zero, per la condivisione di contenuti tecnici, in particolare progetti di programmazione e tutorial. 
+                  Per arricchire il Blog, si decise di creare un canale YouTube, che inizialmente si chiamava <i>MiniProjects</i> e che in seguito divenne <i>Projecto</i>. 
+                  Per completezza del progetto, caricammo anche un paio di video. Terminato il progetto didattico, il canale YouTube rimase attivo e iniziò a "crescere" a nostra insaputa. 
+                  Rimanemmo sorpresi quando, dopo qualche mese, ci accorgemmo che i video caricati continuavano ad essere visti da tante persone, perciò decidemmo di continuare a caricare video.
+                  Nel tempo Projecto cresce passando prima da qualche centinaio di iscritti, aumentati poi a migliaia, fino a decine di migliaia. La strada per arrivare fin qui è stata lunga e molto tortuosa.
+                  Per rimanere fedeli al nostro pubblico e alla nostra missione, abbiamo deciso di non affiliarci a nessuna network, e di non collaborare con aziende che vedevano il nostro pubblico solo come un numero.
+                  Inoltre, abbiamo stabilito fin da subito una politica principalmente contraria alle mode o tendenze del momento, preferendo sempre la qualità alla quantità. I video molto tecnici sono difficili
+                  da esporre, cercando di mantenere alta l'attenzione del pubblico; pubblico che è molto di nicchia. Nonostante ciò sapere che con il nostro lavoro siamo in grado di aiutare qualcuno ci soddisfa molto, ed è il nostro scopo.
+                  Durante e dopo gli studi universitari in Ingegneria Informatica e Intelligenza Artificiale, abbiamo alzato tanto l'avanguardia degli argomenti trattati, e ora vogliamo fare di più! 
+                  Con l'esperienza di un Dottorato di Ricerca in Computer Vision, vogliamo portare lo stato dell'arte nell'Intelligenza Artificiale sul nostro canale YouTube. In futuro vorremo riuscire a strutturaci meglio,
+                  e a creare una vera e propria azienda, specializzandoci in Computer Vision e Robotica.
+                  </text>
         </element>
 
         <element id="title_team">
@@ -259,7 +271,20 @@
         </element>
 
         <element id="text_history">
-            <text>Born in a school in Reggio Emilia following a didactic project for the sole purpose of learning web programming techniques. Over time Projecto grew from a few hundred members, then increased to thousands, up to tens of thousands. Projecto is the Italian YouTube channel with a team of Computer Engineers behind that offer, free of charge, educational content in the field of Computer Science, Electronics and Engineering.</text>
+            <text>
+            It was born on May 10, 2016 at the <i>Blaise Pascal</i> Higher Education Institute in Reggio Emilia following an educational project for the sole purpose of learning web programming techniques.
+            Our objective for the project was to create a multilingual Blog, programmed entirely from scratch, for sharing technical content, in particular programming projects and tutorials.
+            To enrich the Blog, it was decided to create a YouTube channel, which was initially called <i>MiniProjects</i> and which later became <i>Projecto</i>.
+            To complete the project, we also uploaded a couple of videos. Once the educational project was over, the YouTube channel remained active and began to "grow" without our knowledge.
+            We were surprised when, after a few months, we realized that the uploaded videos continued to be viewed by many people, so we decided to continue uploading videos.
+            Over time, Projecto has grown from a few hundred subscribers, then to thousands, to tens of thousands. The road to get here has been long and very tortuous.
+            To remain faithful to our audience and our mission, we decided not to affiliate with any network, and not to collaborate with companies that saw our audience only as a number.
+            Furthermore, we immediately established a policy mainly against the fashions or trends of the moment, always preferring quality over quantity. Very technical videos are difficult
+            to expose, trying to keep the attention of the public high; an audience that is very niche. Despite this, knowing that with our work we are able to help someone satisfies us a lot, and it is our goal.
+            During and after our university studies in Computer Engineering and Artificial Intelligence, we have raised the avant-garde of the topics covered a lot, and now we want to do more!
+            With the experience of a PhD in Computer Vision, we want to bring the state of the art in Artificial Intelligence to our YouTube channel. In the future we would like to be able to structure ourselves better,
+            and create a real company, specializing in Computer Vision and Robotics.
+            </text>
         </element>
         
         <element id="title_team">
