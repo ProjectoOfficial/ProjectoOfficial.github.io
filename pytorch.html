@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Projecto</title>
+    <link rel="icon" href="media/images/LOGOPNG.png" type="image/x-icon">
+    <link rel="shortcut icon" href="media/images/LOGOPNG.png" type="image/x-icon">
+    
+    <link rel="stylesheet" type="text/css" href="styles/header.css">
+    <link rel="stylesheet" type="text/css" href="styles/body.css">
+    <link rel="stylesheet" type="text/css" href="styles/code.css">
+    <link rel="stylesheet" type="text/css" href="styles/darkmode.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <a href="index.html"> <img src="media/images/LOGOPNG.png" alt="Il Tuo Logo"> </a>
+        <nav>
+            <div class="header__container">
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="switch__slider">
+                        <span class="switch__icon">
+                            <i class="fa fa-sun icon-light"></i>
+                            <i class="fa fa-moon icon-dark"></i>
+                        </span>
+                    </span>
+                </label>
+                
+                <select id="languageSelector" class="form-control">
+                    <option value="it">🇮🇹</option>
+                    <option value="en">🇬🇧</option>
+                </select>
+
+                <ul class="social__list ">
+                    <li class="social__list-item">
+                        <a href="https://youtube.com/ProjectoOfficial" target="_blank" class="header__icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="social__list-item">
+                        <a href="https://www.tiktok.com/@officialprojecto" target="_blank" class="header__icon">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </li>
+                    <li class="social__list-item">
+                        <a href="https://www.facebook.com/MiniProjectsOfficial" target="_blank" class="header__icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="social__list-item">
+                        <a href="https://instagram.com/officialprojecto" target="_blank" class="header__icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="support__list ">
+                    <li class="support__list-item">
+                        <a href="https://www.paypal.com/donate/?hosted_button_id=7LRZRJ9J4PAXY" target="_blank" class="header__icon">
+                            <i class="fab fa-paypal"></i>
+                        </a>
+                    </li>
+                    <li class="support__list-item">
+                        <a href="https://www.amazon.it/ideas/amzn1.account.AFUWT7CWTZ6BHSCHJBGURRVVTWWA?ref=idea_yil_tab" target="_blank" class="header__icon">
+                            <i class="fab fa-amazon"></i>
+                        </a>
+                    </li>
+                    <li class="support__list-item">
+                        <a href="http://www.amazon.it/joinstudent?tag=projecto-21" target="_blank" class="header__icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+                    </li>
+                    <li class="support__list-item">
+                        <a href="https://www.ebay.it/usr/officialprojecto" target="_blank" class="header__icon">
+                            <i class="fab fa-ebay"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="sections"> 
+                <ul>
+                    <li><a href="#Storia" data-translate="link_history"></a></li>
+                    <li><a href="#ChiSiamo" data-translate="link_whoami"></a></li>
+                    <li><a href="#Video" data-translate="link_videos"></a></li>
+                    <li><a href="#Collaborazioni" data-translate="link_collaborations"></a></li>
+                    <li><a href="#Contatti" data-translate="link_contacts"></a></li>
+                    <li><a href="#Supporto" data-translate="link_support"></a></li>
+                    <li><a href="#Consulenza" data-translate="link_consulting"></a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <body>
+        <div id="main_container">
+            <section id="pytorch-code" class="section">
+                <h2 data-translate="link_pytorch">PyTorch Code</h2>
+                <p>Questa pagina è ancora in sviluppo - This page is still under development</p>
+                <pre>
+                <code class="language-python">
+                    # Importing necessary libraries
+                    import torch
+                    import torch.nn as nn
+                    import torch.optim as optim
+                    
+                    # Define a simple neural network
+                    class Net(nn.Module):
+                        def __init__(self):
+                            super(Net, self).__init__()
+                            self.fc1 = nn.Linear(784, 128)
+                            self.fc2 = nn.Linear(128, 10)
+                    
+                        def forward(self, x):
+                            x = torch.relu(self.fc1(x))
+                            x = self.fc2(x)
+                            return x
+                    
+                    # Initialize the network and the optimizer
+                    net = Net()
+                    optimizer = optim.SGD(net.parameters(), lr=0.01)
+                </code>
+                <button class="copy-label" id="copyButton" title="Copia codice">
+                    <i class="fas fa-copy"></i>
+                </button>
+                <div class="feedback" id="feedback">Copiato!</div>
+                </pre>
+            </section>
+        </div>
+    </body>
+
+    <button id="scrollToTopBtn" data-translate="button_scrollup"></button>
+</body>
+
+<footer>
+    <p>Manually Translated Website - Last Update: 12/aug/2024</p>
+    <p>&copy; 2024 ProjectoOfficial.github.io</p>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+            hljs.highlightAll();
+        });
+
+    document.getElementById('copyButton').addEventListener('click', () => {
+        const codeBlock = document.querySelector('pre code');
+        const codeText = codeBlock.textContent;
+
+        navigator.clipboard.writeText(codeText).then(() => {
+            const copyIcon = document.querySelector('#copyButton i');
+            const feedback = document.getElementById('feedback');
+
+            copyIcon.classList.remove('fa-copy');
+            copyIcon.classList.add('fa-check');
+
+            feedback.classList.remove('hide');
+            feedback.classList.add('show');
+
+            setTimeout(() => {
+                feedback.classList.remove('show');
+                feedback.classList.add('hide');
+                copyIcon.classList.remove('fa-check');
+                copyIcon.classList.add('fa-copy');
+            }, 400);
+        }).catch(err => {
+            console.error('Errore nella copia del codice: ', err);
+        });
+    });
+</script>
+
+
+<script src="js/script.js" defer></script>
+<script src="js/darkmode.js" defer></script>
+<script src="js/scrolltotop.js" defer></script>
+<script src="js/translate.js" defer></script>
+<script src="js/body.js" defer></script>
+
+</html>

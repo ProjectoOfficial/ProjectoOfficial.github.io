@@ -6,7 +6,6 @@ buttons.forEach(button => {
     maxWidth = Math.max(maxWidth, buttonWidth);
 });
 
-// Imposta la larghezza massima per tutti i bottoni
 buttons.forEach(button => {
     button.style.width = maxWidth + 'px';
 });

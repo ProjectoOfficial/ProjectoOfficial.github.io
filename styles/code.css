@@ -1,0 +1,106 @@
+.hljs {
+    background: #2b2b2b;
+    color: #f8f8f2;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+    color: #ff79c6;
+}
+
+.hljs-string,
+.hljs-title,
+.hljs-name,
+.hljs-type,
+.hljs-attribute,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-tag,
+.hljs-template-variable {
+    color: #f1fa8c;
+}
+
+.hljs-comment {
+    color: #6272a4;
+}
+
+.hljs-deletion,
+.hljs-meta {
+    color: #ff79c6;
+}
+
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-literal,
+.hljs-number {
+    color: #bd93f9;
+}
+
+.hljs-doctag,
+.hljs-section {
+    color: #8be9fd;
+}
+
+.hljs-link {
+    color: #50fa7b;
+}
+
+pre {
+    position: relative;
+    padding: 16px;
+    background-color: #2b2b2b;
+    color: #f8f8f2;
+    border-radius: 8px;
+    overflow: auto;
+}
+
+#copyButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px; 
+    height: 40px; 
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+#copyButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#copyButton i {
+    font-size: 20px;
+}
+
+#feedback {
+    display: none;
+    position: absolute;
+    background-color: #28a745;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    top: 10px;
+    right: 60px;
+}
+
+#feedback.show {
+    display: block;
+}
+
+#feedback.hide {
+    display: none;
+}
