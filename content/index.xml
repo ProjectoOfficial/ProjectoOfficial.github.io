@@ -112,6 +112,16 @@
             <text>I Nostri Progetti</text>
         </element>
 
+        <element id="text_ai_base_docker">
+            <text>
+            ai-base-docker è un container open-source sviluppato e mantenuto da Daniel Rossi per scopi di ricerca scientifica. 
+            Questo container semplifica la compatibilità e la portabilità dei progetti di ricerca scientifica (e non) riguardanti lo sviluppo di reti neurali. 
+            Un container, inoltre, è anche un luogo sicuro dove installare pacchetti ed eseguire codice senza intaccare il proprio sistema. ai-base-docker supporta qualsiasi 
+            immagine di ubuntu con qualsiasi driver grafico, è sufficiente modificare il Dockerfile. Inoltre supporta l'installazione automatica dei file <i>requirements.txt</i>, 
+            l'installazione di file <i>.whl</i>, l'utilizzo di environment Anaconda, e l'utilizzo da remoto. Si consiglia di utilizzare ai-base-docker anche per seguire il corso su PyTorch qui proposto.
+            </text>
+        </element>
+
         <element id="text_pytorch">
             <text>
             PyTorch è il framework corrente più potente per implementare ed utilizzare reti neurali. Viene fornito sotto forma di libreria open-source per il linguaggio di programmazione Python. 
@@ -367,6 +377,16 @@
 
         <element id="title_projects">
             <text>Our Projects</text>
+        </element>
+
+        <element id="text_ai_base_docker">
+            <text>
+            ai-base-docker is an open-source container developed and maintained by Daniel Rossi for scientific research purposes. 
+            This container simplifies the compatibility and portability of scientific research projects (and not) concerning the development of neural networks. 
+            A container, moreover, is also a safe place to install packages and execute code without affecting your system. ai-base-docker supports any ubuntu image with any graphics driver, 
+            you just need to modify the Dockerfile. It also supports the automatic installation of <i>requirements.txt</i> files, the installation of <i>.whl</i> 
+            files, the use of Anaconda environments, and remote use. It is recommended to use ai-base-docker also to follow the PyTorch course proposed here.
+            </text>
         </element>
 
         <element id="text_pytorch">
