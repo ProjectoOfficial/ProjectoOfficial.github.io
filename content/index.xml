@@ -20,6 +20,10 @@
             <text>Collaborazioni</text>
         </element>
 
+        <element id="link_projects">
+            <text>Progetti</text>
+        </element>
+
         <element id="link_contacts">
             <text>Contatti</text>
         </element>
@@ -102,6 +106,24 @@
 
         <element id="text_collaborationsother">
             <text>Dispositivi elettronici o informatici interenti ai contenuti che trattiamo</text>
+        </element>
+
+        <element id="title_projects">
+            <text>I Nostri Progetti</text>
+        </element>
+
+        <element id="text_pytorch">
+            <text>
+            PyTorch è il framework corrente più potente per implementare ed utilizzare reti neurali. Viene fornito sotto forma di libreria open-source per il linguaggio di programmazione Python. 
+            Il corso che vi offriamo vuole farvi scoprire innanzitutto le basi di PyTorch, per poi arrivare passo per passo a spiegarvi come si possono implementare reti neurali in grado di risolvere qualsiasi tipo di problema. 
+            Inoltre puoi fruire direttamente anche dei video pubblicati sul nostro canale YouTube per non perderti eventuali approfondimenti, e nel caso puoi esprimere qualsiasi tuo dubbio tra i commenti. 
+            Questo è un corso in grado di competere con una formazione di laurea magistrale di ingegneria informatica in Intelligenza Artificiale, nonostante ciò alcuni approfondimenti teorici potrebbero essere stati trascurati. 
+            Per una formazione completa consigliamo di intraprendere tale percorso. Il corso ha l'obiettivo di fornire una formazione competitiva senza requisiti come il possesso di una laurea in ingegneria informatica.
+            </text>
+        </element>
+
+        <element id="text_ros">
+            <text>Questa sezione è ancora in sviluppo</text>
         </element>
 
         <element id="title_contacts">
@@ -254,6 +276,10 @@
             <text>Collaborations</text>
         </element>
 
+        <element id="link_projects">
+            <text>Projects</text>
+        </element>
+
         <element id="link_contacts">
             <text>Contacts</text>
         </element>
@@ -337,6 +363,24 @@
 
         <element id="text_collaborationsother">
             <text>Electronic or technological devices that are inherent to the topics we cover in our youtube channel</text>
+        </element>
+
+        <element id="title_projects">
+            <text>Our Projects</text>
+        </element>
+
+        <element id="text_pytorch">
+            <text>
+            PyTorch is the most powerful current framework for implementing and using neural networks. It is provided as an open-source library for the Python programming language. 
+            The course we offer aims to help you first discover the basics of PyTorch, and then step by step explain how you can implement neural networks that can solve any type of problem. 
+            You can also directly use the videos published on our YouTube channel so as not to miss any further information, and if necessary you can express any doubts in the comments. 
+            This is a course that can compete with a master's degree in computer engineering in Artificial Intelligence, despite this some theoretical insights may have been overlooked. 
+            For a complete training we recommend taking this path. The course aims to provide competitive training without requirements such as having a degree in computer engineering.
+            </text>
+        </element>
+
+        <element id="text_ros">
+            <text>this section is still under development</text>
         </element>
 
         <element id="title_contacts">

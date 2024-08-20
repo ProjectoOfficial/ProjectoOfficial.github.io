@@ -183,6 +183,43 @@ footer {
     margin: 0 auto; 
 }
 
+/* PROJECTS SECTION*/
+.progetti {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.progetto {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.copertina {
+    background-color: transparent;
+    padding: 10px;
+    margin: 10px;
+}
+
+.descrizione-progetto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.descrizione-progetto h3 {
+    margin: 0;
+}
+
+.copertina img {
+    background-color: transparent;
+    min-width: 120px;
+    object-fit: cover;
+    margin: 0;
+}
+
 
 /* CONTACTS */
 .contacts{

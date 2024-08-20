@@ -21,7 +21,7 @@ function loadTranslationsXML(fileUrls, callback) {
                             
                             for (let j = 0; j < elements.length; j++) {
                                 const id = elements[j].getAttribute("id");
-                                const text = elements[j].getElementsByTagName("text")[0].textContent;
+                                const text = elements[j].getElementsByTagName("text")[0].innerHTML;
                                 translationMap[lang][id] = text;
                             }
                         }
@@ -51,7 +51,7 @@ function translateContent(language, translationMap) {
         const id = element.getAttribute('data-translate');
         const translatedText = translationMap[language] && translationMap[language][id];
         if (translatedText) {
-            element.textContent = translatedText;
+            element.innerHTML = translatedText;
         } else {
             console.error('Nessuna traduzione trovata per l\'ID:', id);
         }

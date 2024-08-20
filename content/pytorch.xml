@@ -1,14 +1,111 @@
 <translations>
     <translation lang="it">
-        <element id="ciccio">
-            <text>Our History</text>
+        <element id="link-intro">
+            <text>Introduzione</text>
         </element>
+
+        <element id="introduction-title">
+            <text>Cosa è PyTorch?</text>
+        </element>
+
+        <element id="introduction-text">
+            <text>
+            <a href="https://pytorch.org/">PyTorch</a> è una libreria open-source per machine learning e deep learning sviluppata in origine da Facebook's AI Research lab (FAIR).
+            È nota per la sua semplicità d'uso e per la sua capacità di essere uno strumento sintetico per lo sviluppo di reti neurali. Pytorch è disponibile per i principali sistemi operativi come Windows, Linux e MacOS.
+            Pytorch è un framework sviluppato sotto forma di libreria per il linguaggio di programmazione Python, ma le funzionalità principali sono scritte in C++ per garantire la massima efficienza. Il codice può
+            essere eseguito su CPU e GPU, e la libreria supporta anche il calcolo distribuito. Gli acceleratori hardware attualmente supportati sono CUDA (GPU e GPGPU NVIDIA) e ROCm (GPU Radeon). PyTorch è stato rilasciato 
+            per la prima volta nel 2016 ed è stato sviluppato da Adam Paszke, Sam Gross, Soumith Chintala, Gregory Chanan e Edward Yang.
+            </text>
+        </element>
+
+        <element id="lecture-1-title">
+            <text>Lezione 1 di PyTorch</text>
+        </element>
+
+        <element id="lecture-1-text">
+            <text>
+            Come tutte le librerie in Python, anche PyTorch va importato utilizzando la classica keyword <code class="inline">import</code>. 
+            Come anticipato, PyTorch è in grado di utilizzare diversi dispositivi hardware per la computazione. Uno tra questi è la GPU. 
+            Per utenti NVIDIA è sufficiente eseguire <code class="inline">torch.cuda.is_available()</code> per controllare se la GPU è utilizzabile e se i driver sono stati correttamente installati. 
+            <code class="inline">torch.device</code> è invece la classe che gestisce qualsiasi dispositivo di computazione, dunque è necessario specificare lì quale si intende utilizzare. 
+            Dopodiché le operazioni in pytorch sono tipicamente svolte o tra tensori e tensori, o tra scalari e tensori, dunque è necessario familiarizzare fin da subito con questa struttura dati. 
+            <code class="inline">torch.tensor(...)</code> è il metodo che ci permette di creare un tensore. Un tensore in Pytorch è una classe che contiene una serie di attributi fondamentali che 
+            definiscono come viene allocato in memoria e come viene letto in modo corretto. La classe tensore ha dunque diversi attributi che ci permettono di profilare il tensore che è stato creato. 
+            Oltre a creare un tensore a mano, e possibile creare tensori con valori interni pre-definiti, come tensori composti da tutti i valori a 1, o a 0, oppure tensori composti da numeri randomici.
+            </text>
+        </element>
+
+        <element id="lecture-2-title">
+            <text>Lezione 2 di PyTorch</text>
+        </element>
+
+        <element id="lecture-2-text">
+            <text>
+            Una volta imparato a creare tensori, è necessario anche saperli utilizzare. 
+            Tante volte in deep learning è necessario manipolare i tensori, cambiargli aspetto o forma in modo che siano compatibili per le operazioni che devono andare a svolgere. 
+            I tensori vengono creati in memoria (RAM o VRAM) in modo contiguo e l'attributo <code class="inline">stride</code>  di ogni tensore descrive scorrerlo. Lo stride indica, per ogni dimensione, 
+            il numero di valori consecutivo che costituiscono gli elementi dimensionali del tensore. Ogni tensore ha anche un <code class="inline">dtype</code> che definisce il tipo e il numero di byte che 
+            esprimono i valori del tensore. Il prodotto classico svolto tramite l'operatore <code class="inline">*</code> tra due tensori, che <b>devono</b> avere le stesse dimensioni (a meno dell'ultima), 
+            è un prodotto element-wise. Stesso discorso vale per gli altri operatori classici. I tensori hanno un attributo <code class="inline">shape</code> che esplicita di quanti elementi è costituita 
+            ogni dimensione del tensore. Inoltre ogni tensore ha metodi che a loro volta svolgono operazioni su di esso, come <code class="inline">.sum()</code> 
+            che va a sommare tutti i valori presenti in una o più dimensioni specificate. 
+            </text>
+        </element>
+
     </translation>
 
     <translation lang="en">
-        <element id="ciccio">
-            <text>Our History</text>
+        <element id="link-intro">
+            <text>Introduction</text>
         </element>
+
+        <element id="introduction-title">
+            <text>What is PyTorch?</text>
+        </element>
+
+        <element id="introduction-text">
+            <text>
+            <a href="https://pytorch.org/">PyTorch</a> is an open-source library for machine learning and deep learning originally developed by Facebook's AI Research lab (FAIR).
+            It is known for its ease of use and its ability to be a synthetic tool for developing neural networks. Pytorch is available for major operating systems such as Windows, Linux, and MacOS.
+            Pytorch is a framework developed as a library for the Python programming language, but the core functionality is written in C++ for maximum efficiency. The code can
+            run on both CPUs and GPUs, and the library also supports distributed computing. The currently supported hardware accelerators are CUDA (NVIDIA GPUs and GPGPUs) and ROCm (Radeon GPUs). PyTorch was first released in
+            2016 and was developed by Adam Paszke, Sam Gross, Soumith Chintala, Gregory Chanan, and Edward Yang.
+            </text>
+        </element>
+
+        <element id="lecture-1-title">
+            <text>Lecture 1 about Pytorch</text>
+        </element>
+
+        <element id="lecture-1-text">
+            <text>
+            Like all Python libraries, PyTorch must also be imported using the classic <code class="inline">import</code> keyword. As anticipated, PyTorch is able to use different hardware devices for computation. 
+            One of these is the GPU. For NVIDIA users, it is sufficient to run <code class="inline">torch.cuda.is_available()</code> to check if the GPU is usable and if the drivers have been correctly installed. 
+            <code class="inline">torch.device</code> is instead the class that manages any computation device, so it is necessary to specify there which one you intend to use. 
+            After that, operations in Pytorch are typically performed either between tensors and tensors, or between scalars and tensors, so it is necessary to immediately familiarize yourself with this data structure. 
+            <code class="inline">torch.tensor(...)</code> is the method that allows us to create a tensor. A tensor in Pytorch is a class that contains a series of fundamental attributes that define how it is allocated 
+            in memory and how it is read correctly. The tensor class therefore has several attributes that allow us to profile the tensor that has been created. In addition to creating a tensor by hand, 
+            it is possible to create tensors with predefined internal values, such as tensors composed of all values to 1, or to 0, or tensors composed of random numbers.
+            </text>
+        </element>
+
+        <element id="lecture-2-title">
+            <text>Lecture 2 about Pytorch</text>
+        </element>
+
+        <element id="lecture-2-text">
+            <text>
+            Once you have learned how to create tensors, you also need to know how to use them. Many times in deep learning it is necessary to manipulate tensors, 
+            change their appearance or shape so that they are compatible for the operations they are going to perform. Tensors are created in memory (RAM or VRAM) 
+            contiguously and the <code class="inline">stride</code> attribute of each tensor describes how to scroll through it. The stride indicates, for each dimension, 
+            the number of consecutive values ​​that constitute the dimensional elements of the tensor. Each tensor also has a <code class="inline">dtype</code> that defines the 
+            type and number of bytes that express the values ​​of the tensor. The classic product performed via the <code class="inline">*</code> operator between two tensors, which 
+            <b>must</b> have the same dimensions (except for the last one), is an element-wise product. The same goes for the other classic operators. Tensors have a <code class="inline">shape</code> 
+            attribute that specifies how many elements each dimension of the tensor is made up of. Each tensor also has methods that perform operations on it, such as <code class="inline">.sum()</code> 
+            which adds up all the values ​​in one or more specified dimensions.
+            </text>
+        </element>
+
     </translation>
 
 </translations>

@@ -87,13 +87,13 @@
             
             <div class="sections"> 
                 <ul>
-                    <li><a href="#Storia" data-translate="link_history"></a></li>
-                    <li><a href="#ChiSiamo" data-translate="link_whoami"></a></li>
-                    <li><a href="#Video" data-translate="link_videos"></a></li>
-                    <li><a href="#Collaborazioni" data-translate="link_collaborations"></a></li>
-                    <li><a href="#Contatti" data-translate="link_contacts"></a></li>
-                    <li><a href="#Supporto" data-translate="link_support"></a></li>
-                    <li><a href="#Consulenza" data-translate="link_consulting"></a></li>
+                    <li><a href="#Intro" data-translate="link-intro"></a></li>
+                    <li><a href="#lecture1">1</a></li>
+                    <li><a href="#lecture2">2</a></li>
+                    <li><a href="#lecture3">3</li>
+                    <li><a href="#lecture4">4</a></li>
+                    <li><a href="#lecture5">5</a></li>
+                    <li><a href="#lecture6">6</a></li>
                 </ul>
             </div>
 
@@ -102,46 +102,178 @@
 
     <body>
         <div id="main_container">
-            <section id="pytorch-code" class="section">
-                <h2 data-translate="link_pytorch">PyTorch Code</h2>
-                <p>Questa pagina è ancora in sviluppo - This page is still under development</p>
-                <pre>
-                <code class="language-python">
-                    # Importing necessary libraries
-                    import torch
-                    import torch.nn as nn
-                    import torch.optim as optim
-                    
-                    # Define a simple neural network
-                    class Net(nn.Module):
-                        def __init__(self):
-                            super(Net, self).__init__()
-                            self.fc1 = nn.Linear(784, 128)
-                            self.fc2 = nn.Linear(128, 10)
-                    
-                        def forward(self, x):
-                            x = torch.relu(self.fc1(x))
-                            x = self.fc2(x)
-                            return x
-                    
-                    # Initialize the network and the optimizer
-                    net = Net()
-                    optimizer = optim.SGD(net.parameters(), lr=0.01)
-                </code>
-                <button class="copy-label" id="copyButton" title="Copia codice">
-                    <i class="fas fa-copy"></i>
-                </button>
-                <div class="feedback" id="feedback">Copiato!</div>
-                </pre>
+            <section id="Intro" class="section">
+                <h2 data-translate="introduction-title"></h2>
+                <p data-translate="introduction-text"></p>
             </section>
-        </div>
-    </body>
 
-    <button id="scrollToTopBtn" data-translate="button_scrollup"></button>
+            <section id="lecture1" class="section">
+                <h2 data-translate="lecture-1-title"></h2>
+                <p data-translate="lecture-1-text"> </p>
+                <div class="code_container">
+                    <pre>
+                    <code class="language-python">
+    import torch
+
+    # Check if CUDA is correctly installed and the GPU is available
+    print(f"Is CUDA available? {torch.cuda.is_available()}")
+    print(f"How many CUDA devices are available? {torch.cuda.device_count()}")
+    print(f"Name of the CUDA device: {torch.cuda.get_device_name(0)}")
+
+
+    # Select the device to be used for the computation
+    device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+
+    # Create a tensor and send it to the device:
+    # 1. The tensor is directly created on the device (more efficient)
+    z = torch.tensor([[1, 2, 3, 4], [4, 5, 6, 8]], dtype=torch.float32, device=device)
+
+    # 2. The tensor is created on the CPU and then moved to the device
+    x = torch.tensor([[1, 2, 3, 4], [4, 5, 6, 8]]).to(torch.float32).to(device)
+
+    print(z)
+    print(x)
+
+    # With z.shape we can get the shape of the tensor which indicates the number of elements in each dimension
+    print(z.shape)
+
+    # With z.size() we can get the total number of elements in the tensor
+    print(z.size())
+
+    # With z.numel() we can get the total number of elements in the tensor as well
+    print(z.numel())
+
+    # We can also get the data type of the tensor with z.dtype
+    print(z.dtype)
+
+    # Since we can also set the tensor's device, we can check the device of the tensor with z.device
+    print(z.device)
+
+    # Now, it is possible to create a tensor manually as we've seen before,
+    # but PyTorch provides a variety of functions to create tensors with specific properties.
+    # For instance, we can create a tensor with all zeros with torch.zeros(shape)
+    z = torch.zeros((4, 4), dtype=torch.float32, device=device)
+    print(z)
+
+    # Similarly, we can create a tensor with all ones with torch.ones(shape)
+    x = torch.ones((4, 4), dtype=torch.float32, device=device)
+    print(x)
+
+    # We can also create a tensor with random values with torch.rand(shape)
+    y = torch.rand((4, 4), device=device)
+    print(y)
+
+    # We can generate a tensor with random values from a normal distribution with torch.randn(shape)
+    y = torch.randn((4, 4), device=device)
+    print(y)
+
+    # We can also choose one value used to populate a tensor with torch.full(shape, value)
+    z = torch.full((4, 4), 42, device=device)
+    print(z)
+
+    # There are multiple ways to create tensors with specific properties, my suggestion is to check the documentation
+                    </code>
+                    <button class="copy-label" id="copyButton" title="Copia codice">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                    <div class="feedback" id="feedback">Copiato!</div>        
+                    </pre>
+
+
+                    <div class="video_container">
+                        <iframe src="https://www.youtube.com/embed/vMGmyZAYR24"></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <section id="lecture2" class="section">
+                <h2 data-translate="lecture-2-title"></h2>
+                <p data-translate="lecture-2-text"> </p>
+                <div class="code_container">
+                    <pre>
+                    <code class="language-python">
+    import torch
+
+    device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+    
+    # Stride is a property of the tensor which indicates the number of elements in the memory 
+    # between two consecutive elements in the tensor dimension
+    z = torch.zeros((2, 2), dtype=torch.float64, device=device)
+    print(z.stride())
+    
+    # pytorch operations allow us to perform element-wise operations on tensors
+    # For instance, we can multiply a tensor with a scalar
+    z = torch.ones((2, 2), dtype=torch.float64, device=device) * 2
+    print(z)
+    
+    # We can also multiply two tensors element-wise, but they must have the same shape
+    y = torch.ones((2, 2), dtype=torch.float64, device=device) * 6
+    k = z * y
+    print(k)
+    
+    # We can perform element-wise addition, subtraction, division, and exponentiation as well
+    k = z + y
+    print(k) # Addition
+    
+    k = z - y
+    print(k) # Subtraction
+    
+    k = z / y
+    print(k) # Division
+    
+    k = z ** y
+    print(k) # Exponentiation
+    
+    # We can perform these operations in some cases where the tensors have different shapes
+    # as long as the shapes are broadcastable
+    # The tensor must have the same shape except for the one dimension
+    y = torch.ones((1, 2), dtype=torch.float64, device=device) * 6
+    k = z - y
+    print(k)
+    
+    # Operations such as sum, mean, max, min, etc. can be performed on tensors
+    # These operations can be performed along a specific dimension
+    # This dimension will obviously collapse in one resulting element
+    # For instance, we can sum all the elements of a tensor
+    z = torch.ones((2, 4), dtype=torch.float64, device=device) * 2
+    print(z)
+    
+    k = z.sum(dim=1)
+    print(k)
+    print(k.shape)
+    
+    # It is possible to preserve the dimension of the resulting tensor by setting keepdim=True
+    k = z.sum(dim=1, keepdim=True)
+    print(k)
+    print(k.shape)
+    
+    # To concatenate two tensors along a specific dimension, we can use torch.cat
+    # The tensors must have the same shape except for the dimension along which they are concatenated
+    z = torch.ones((2, 2), dtype=torch.float64, device=device) * 2
+    y = torch.ones((2, 2), dtype=torch.float64, device=device) * 6
+    k = torch.cat((z, y), dim=0)
+    print(k)
+    print(k.shape)
+                    </code>
+                    <button class="copy-label" id="copyButton" title="Copia codice">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                    <div class="feedback" id="feedback">Copiato!</div>        
+                    </pre>
+
+
+                    <div class="video_container">
+                        <iframe src="https://www.youtube.com/embed/Vf2rSP1Ki40"></iframe>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <button id="scrollToTopBtn" data-translate="button_scrollup"></button>
 </body>
 
 <footer>
-    <p>Manually Translated Website - Last Update: 12/aug/2024</p>
+    <p>Manually Translated Website - Last Update: 20/aug/2024</p>
     <p>&copy; 2024 ProjectoOfficial.github.io</p>
 </footer>
 
@@ -181,6 +313,5 @@
 <script src="js/darkmode.js" defer></script>
 <script src="js/scrolltotop.js" defer></script>
 <script src="js/translate.js" defer></script>
-<script src="js/body.js" defer></script>
 
 </html>
