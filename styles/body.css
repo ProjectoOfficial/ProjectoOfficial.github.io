@@ -73,39 +73,67 @@ footer {
 
 
 /* CHI SIAMO*/
-.chi-siamo {
+.persone {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch; /* Ensures all .utente items stretch to the same height */
+    text-align: center;
+    gap: 20px;
 }
 
 .utente {
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 48%; /* Adjust width for two columns */
     margin-bottom: 20px;
-    align-items: flex-start;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    flex-grow: 1; /* Ensures all .utente elements grow equally */
 }
 
 .foto {
-    margin:10px;
-}
-
-.descrizione {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.descrizione h3 {
-    margin: 0;
+    margin-bottom: 15px;
 }
 
 .foto img {
-    min-width: 120px;
-    object-fit: cover;
     width: 150px;
     height: 150px;
-    margin: 0;
+    object-fit: cover;
+    border-radius: 50%; /* Circular image */
+}
+
+.descrizione {
+    flex-grow: 1; /* Allow description to take up available space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    text-align: center;
+}
+
+.descrizione h3 {
+    margin: 10px 0 5px 0;
+}
+
+@media (max-width: 768px) {
+    .persone {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .utente {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px;
+    }
+    .read-more {
+        display: block;
+    }
 }
 
 
@@ -195,6 +223,7 @@ footer {
     width: 100%;
     margin-bottom: 20px;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .copertina {
@@ -207,6 +236,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    flex-basis: 50%;
+    padding: 10px;
 }
 
 .descrizione-progetto h3 {
@@ -215,9 +246,20 @@ footer {
 
 .copertina img {
     background-color: transparent;
-    min-width: 120px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
     margin: 0;
+}
+
+@media (max-width: 768px) {
+    .progetto {
+        flex-direction: column;
+    }
+    
+    .copertina, .descrizione-progetto {
+        flex-basis: 100%;
+    }
 }
 
 
@@ -229,15 +271,15 @@ footer {
 /* SUPPORT */ 
 .support-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr); 
     gap: 20px;
-    padding:20px;
+    padding: 20px;
     justify-content: center;
-    text-align: center; 
+    text-align: center;
 }
 
 .support-link {
-    text-decoration: none; 
+    display: block;
 }
 
 .support-link .support-item {
@@ -248,6 +290,20 @@ footer {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    width: 100%; 
+    box-sizing: border-box; 
+    min-width: 200px; 
+    height: 50px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.support-link .support-item i {
+    margin-right: 8px; /* Spazio tra l'icona e il testo */
 }
 
 .support-link .support-item:hover {
@@ -255,7 +311,7 @@ footer {
     color: #000;
 }
 
-.button-support{
+.button-support {
     color: transparent; 
     background-color: transparent; 
     border: none; 
@@ -263,6 +319,7 @@ footer {
 
 @media (max-width: 1200px) {
     .support-grid {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr); /* Una colonna per schermi piccoli */
     }
 }
+

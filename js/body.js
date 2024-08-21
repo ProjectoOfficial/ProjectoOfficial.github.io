@@ -8,3 +8,7 @@ function nextSlide() {
 }
 
 setInterval(nextSlide, 3000);
+
+document.getElementById('menuToggle').addEventListener('click', function() {
+    document.querySelector('.nav-content').classList.toggle('active');
+});

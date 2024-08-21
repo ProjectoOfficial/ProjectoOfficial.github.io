@@ -20,82 +20,56 @@
         <a href="index.html"> <img src="media/images/LOGOPNG.png" alt="Il Tuo Logo"> </a>
         <nav>
             <div class="header__container">
-                <label class="switch">
-                    <input type="checkbox" id="darkModeToggle">
-                    <span class="switch__slider">
-                        <span class="switch__icon">
-                            <i class="fa fa-sun icon-light"></i>
-                            <i class="fa fa-moon icon-dark"></i>
+                <button class="menu-toggle" id="menuToggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+        
+                <div class="nav-content">
+                    <ul class="nav-links">
+                        <li><a href="#Storia" data-translate="link_history"><i class="fas fa-book"></i> Storia</a></li>
+                        <li><a href="#Video" data-translate="link_videos"><i class="fas fa-video"></i> Video</a></li>
+                        <li><a href="#Collaborazioni" data-translate="link_collaborations"><i class="fas fa-handshake"></i> Collaborazioni</a></li>
+                        <li><a href="#Progetti" data-translate="link_projects"><i class="fas fa-project-diagram"></i> Progetti</a></li>
+                        <li><a href="#Contatti" data-translate="link_contacts"><i class="fas fa-envelope"></i> Contatti</a></li>
+                        <li><a href="#Supporto" data-translate="link_support"><i class="fas fa-hands-helping"></i> Supporto</a></li>
+                        <li><a href="#Consulenza" data-translate="link_consulting"><i class="fas fa-lightbulb"></i> Consulenza</a></li>
+                    </ul>
+                </div>
+        
+                <div class="nav-controls">
+                    <label class="switch">
+                        <input type="checkbox" id="darkModeToggle">
+                        <span class="switch__slider">
+                            <span class="switch__icon">
+                                <i class="fa fa-sun icon-light"></i>
+                                <i class="fa fa-moon icon-dark"></i>
+                            </span>
                         </span>
-                    </span>
-                </label>
-                
-                <select id="languageSelector" class="form-control">
-                    <option value="it">🇮🇹</option>
-                    <option value="en">🇬🇧</option>
-                </select>
-
-                <ul class="social__list ">
-                    <li class="social__list-item">
-                        <a href="https://youtube.com/ProjectoOfficial" target="_blank" class="header__icon">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </li>
-                    <li class="social__list-item">
-                        <a href="https://www.tiktok.com/@officialprojecto" target="_blank" class="header__icon">
-                            <i class="fab fa-tiktok"></i>
-                        </a>
-                    </li>
-                    <li class="social__list-item">
-                        <a href="https://www.facebook.com/MiniProjectsOfficial" target="_blank" class="header__icon">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="social__list-item">
-                        <a href="https://instagram.com/officialprojecto" target="_blank" class="header__icon">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                </ul>
-
-                <ul class="support__list ">
-                    <li class="support__list-item">
-                        <a href="https://www.paypal.com/donate/?hosted_button_id=7LRZRJ9J4PAXY" target="_blank" class="header__icon">
-                            <i class="fab fa-paypal"></i>
-                        </a>
-                    </li>
-                    <li class="support__list-item">
-                        <a href="https://www.amazon.it/ideas/amzn1.account.AFUWT7CWTZ6BHSCHJBGURRVVTWWA?ref=idea_yil_tab" target="_blank" class="header__icon">
-                            <i class="fab fa-amazon"></i>
-                        </a>
-                    </li>
-                    <li class="support__list-item">
-                        <a href="http://www.amazon.it/joinstudent?tag=projecto-21" target="_blank" class="header__icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </a>
-                    </li>
-                    <li class="support__list-item">
-                        <a href="https://www.ebay.it/usr/officialprojecto" target="_blank" class="header__icon">
-                            <i class="fab fa-ebay"></i>
-                        </a>
-                    </li>
-                </ul>
+                    </label>
+                    <select id="languageSelector" class="form-control">
+                        <option value="it">🇮🇹</option>
+                        <option value="en">🇬🇧</option>
+                    </select>
+                </div>
+        
+                <div class="social-icons">
+                    <a href="https://youtube.com/ProjectoOfficial" target="_blank" class="header__icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@officialprojecto" target="_blank" class="header__icon">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.facebook.com/MiniProjectsOfficial" target="_blank" class="header__icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com/officialprojecto" target="_blank" class="header__icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
             </div>
-            
-            <div class="sections"> 
-                <ul>
-                    <li><a href="#Storia" data-translate="link_history"></a></li>
-                    <li><a href="#ChiSiamo" data-translate="link_whoami"></a></li>
-                    <li><a href="#Video" data-translate="link_videos"></a></li>
-                    <li><a href="#Collaborazioni" data-translate="link_collaborations"></a></li>
-                    <li><a href="#Progetti" data-translate="link_projects"></a></li>
-                    <li><a href="#Contatti" data-translate="link_contacts"></a></li>
-                    <li><a href="#Supporto" data-translate="link_support"></a></li>
-                    <li><a href="#Consulenza" data-translate="link_consulting"></a></li>
-                </ul>
-            </div>
-
-        </nav>
+        </nav>        
     </header>
 
     <body>
@@ -120,6 +94,7 @@
 
             <section id="ChiSiamo" class="section">
                 <h2 data-translate="title_team"></h2>
+                <div class="persone">
                     <div class="utente">
                         <div class="foto">
                             <img src="media/chisiamo/DANIEL.JPG" alt="Foto Daniel">
@@ -139,6 +114,7 @@
                             <p data-translate="text_alberto"></p>
                         </div>
                     </div>
+                </div>
             </section>
             
             <section id="Video" class="section">
@@ -221,7 +197,7 @@
 
                     <div class="progetto">
                         <div class="copertina">
-                            <img src="media/projects/pytorchessentials.webp" alt="Pytorch course">
+                            <img src="media/projects/pytorchessentials.webp" style="max-height: 180px; max-width: 320px;" alt="Pytorch course">
                         </div>
                         <div class="descrizione-progetto">
                             <h3><a href="pytorch.html">PyTorch</a></h3>
@@ -231,7 +207,7 @@
             
                     <div class="progetto">
                         <div class="copertina">
-                            <img src="media/projects/ros.webp" alt="ROS course">
+                            <img src="media/projects/ros.webp" style="max-height: 180px; max-width: 320px;" alt="ROS course">
                         </div>
                         <div class="descrizione-progetto">
                             <h3><a href="ros.html">ROS</a></h3>
@@ -279,13 +255,49 @@
             <section id="Supporto" class="section">
                 <h2 data-translate="title_support"></h2>
                 <div class="support-grid">
-                    <a class="support-link" href="https://www.youtube.com/channel/UCIK8JM7gbihcEuN-aG_8kag" target="_blank"><button class="button-support"><span class="support-item" data-translate="text_supportsubscription"></span></button></a>
-                    <a class="support-link" href="https://www.paypal.com/donate/?hosted_button_id=7LRZRJ9J4PAXY" target="_blank"><button class="button-support"><span class="support-item" data-translate="text_supportdonation"></span></button></a>
-                    <a class="support-link" href="https://www.amazon.it/ideas/amzn1.account.AFUWT7CWTZ6BHSCHJBGURRVVTWWA?ref=idea_yil_tab" target="_blank"><button class="button-support"><span class="support-item" data-translate="text_supportamazon"></span></button></a>
-                    <a class="support-link" href="http://www.amazon.it/joinstudent?tag=projecto-21" target="_blank"><button class="button-support"><span class="support-item" data-translate="text_supportprime"></span></button></a>
-                    <a class="support-link" href="https://www.ebay.it/usr/officialprojecto" target="_blank"><button class="button-support"><span class="support-item" data-translate="text_supportstore"></span></button></a>
+                    <a class="support-link" href="https://www.youtube.com/channel/UCIK8JM7gbihcEuN-aG_8kag" target="_blank">
+                        <button class="button-support">
+                            <span class="support-item">
+                                <i class="fas fa-play"></i> <!-- Icona per YouTube -->
+                                <span data-translate="text_supportsubscription"></span>
+                            </span>
+                        </button>
+                    </a>
+                    <a class="support-link" href="https://www.paypal.com/donate/?hosted_button_id=7LRZRJ9J4PAXY" target="_blank">
+                        <button class="button-support">
+                            <span class="support-item">
+                                <i class="fas fa-donate"></i> <!-- Icona per PayPal -->
+                                <span data-translate="text_supportdonation"></span>
+                            </span>
+                        </button>
+                    </a>
+                    <a class="support-link" href="https://www.amazon.it/ideas/amzn1.account.AFUWT7CWTZ6BHSCHJBGURRVVTWWA?ref=idea_yil_tab" target="_blank">
+                        <button class="button-support">
+                            <span class="support-item">
+                                <i class="fas fa-shopping-cart"></i> <!-- Icona per Amazon -->
+                                <span data-translate="text_supportamazon"></span>
+                            </span>
+                        </button>
+                    </a>
+                    <a class="support-link" href="http://www.amazon.it/joinstudent?tag=projecto-21" target="_blank">
+                        <button class="button-support">
+                            <span class="support-item">
+                                <i class="fas fa-film"></i>
+                                <span data-translate="text_supportprime"></span>
+                            </span>
+                        </button>
+                    </a>
+                    <a class="support-link" href="https://www.ebay.it/usr/officialprojecto" target="_blank">
+                        <button class="button-support">
+                            <span class="support-item">
+                                <i class="fas fa-store"></i> <!-- Icona per eBay -->
+                                <span data-translate="text_supportstore"></span>
+                            </span>
+                        </button>
+                    </a>
                 </div>
             </section>
+            
 
             <section id="Consulenza" class="section">
                 <h2 class="my-4" data-translate="title_consulting"></h2>
@@ -321,7 +333,7 @@
     </body>
 
     <footer>
-        <p>Manually Translated Website - Last Update: 20/aug/2024</p>
+        <p>Manually Translated Website - Last Update: 22/aug/2024</p>
         <p>&copy; 2024 ProjectoOfficial.github.io</p>
     </footer>
 
