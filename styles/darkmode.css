@@ -22,6 +22,12 @@
     opacity: 0.9;
 }
 
+.dark-mode .utente {
+    background-color: #111111;  
+    color: #fff; 
+    transition: background-color 0.5s, color 0.5s;
+}
+
 .dark-mode .form-control {
     color: white;
     background-color: #343a40;

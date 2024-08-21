@@ -2,7 +2,8 @@
 header img {
     width: 100px;
     height: auto;
-    margin: 10px;
+    margin: 50px;
+    margin-top: 20px;
 }
 
 header {
@@ -83,7 +84,7 @@ nav {
 }
 
 .nav-links a:hover {
-    background-color: #4caf50;
+    background-color: #007BFF;
     color: #fff;
     transform: scale(1.05);
 }
@@ -174,7 +175,7 @@ select.form-control:hover {
 }
 
 .social-icons a:hover {
-    color: #4caf50;
+    color: #007BFF;
 }
 
 @media (max-width: 768px) {
