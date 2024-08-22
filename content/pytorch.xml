@@ -18,11 +18,11 @@
             </text>
         </element>
 
-        <element id="lecture-1-title">
-            <text>Lezione 1 di PyTorch</text>
+        <element id="lecture-0-title">
+            <text>Introduzione a PyTorch</text>
         </element>
 
-        <element id="lecture-1-text">
+        <element id="lecture-0-text">
             <text>
             Come tutte le librerie in Python, anche PyTorch va importato utilizzando la classica keyword <code class="inline">import</code>. 
             Come anticipato, PyTorch è in grado di utilizzare diversi dispositivi hardware per la computazione. Uno tra questi è la GPU. 
@@ -35,11 +35,11 @@
             </text>
         </element>
 
-        <element id="lecture-2-title">
-            <text>Lezione 2 di PyTorch</text>
+        <element id="lecture-1-title">
+            <text>Lezione 1 di PyTorch</text>
         </element>
 
-        <element id="lecture-2-text">
+        <element id="lecture-1-text">
             <text>
             Una volta imparato a creare tensori, è necessario anche saperli utilizzare. 
             Tante volte in deep learning è necessario manipolare i tensori, cambiargli aspetto o forma in modo che siano compatibili per le operazioni che devono andare a svolgere. 
@@ -49,6 +49,32 @@
             è un prodotto element-wise. Stesso discorso vale per gli altri operatori classici. I tensori hanno un attributo <code class="inline">shape</code> che esplicita di quanti elementi è costituita 
             ogni dimensione del tensore. Inoltre ogni tensore ha metodi che a loro volta svolgono operazioni su di esso, come <code class="inline">.sum()</code> 
             che va a sommare tutti i valori presenti in una o più dimensioni specificate. 
+            </text>
+        </element>
+
+        <element id="lecture-2-title">
+            <text>Lezione 2 di PyTorch</text>
+        </element>
+
+        <element id="lecture-2-text">
+            <text>
+            Avanzando con le lezioni andremo ad evidenziare l'importanza di fissare un seed manuale attraverso <code class="inline">torch.manual_seed(42)</code>. 
+            Questo ci consente di garantire la riproducibilità tra un esperimento e l'altro. Ciò su cui vogliamo focalizzarci ora sono le automazioni su cui si basa PyTorch, 
+            in particolare quelle che avvengono quando svolgiamo operazioni tra tensori. I metodi <code class="inline">.squeeze(dim=-1)</code> e <code class="inline">.unsqueeze(dim=-1)</code> 
+            ci permettono di aggiungere una dimensione al tensore nella posizione specificata da <code class="inline">dim</code>. Bisogna ricordare dalla geometria che il prodotto matriciale 
+            tra due matrici è possibile soltanto se l'ultima dimensione della prima matrice è uguale alla prima dimensione della seconda, ma in PyTorch c'è una scorciatoia per rendere più lasco questo concetto. 
+            Il broadcasting consente di effettuare operazioni aritmetiche tra tensori di forme diverse in modo che le dimensioni delle matrici siano compatibili per il calcolo. Questo avviene 
+            senza la necessità di replicare i dati, ma attraverso un processo concettuale che "espande" i tensori in modo che abbiano forme compatibili. La prima regola del broadcasting è che 
+            le dimensioni dei tensori vengono confrontate a partire dall'ultima dimensione e procedendo verso la dimensione iniziale; due dimensioni sono compatibili se sono uguali, o se una delle dimensioni è 1. 
+            Come funziona il Broadcasting in PyTorch? Se una dimensione di un tensore è 1, il tensore può essere "espanso" lungo quella dimensione così da diventare compatibile all'altro. 
+            Se una dimensione di uno dei tensori è mancante, viene assunta come 1 e può essere sottoposta allo stesso procedimento. Il broadcasting non implica la creazione fisica di nuovi tensori; 
+            piuttosto, è una vista logica dei dati che consente operazioni efficienti senza duplicazione. Dunque, anche se le dimensioni dei tensori non sono esattamente uguali, possono essere compatibili 
+            se le dimensioni sono "broadcastabili" secondo le regole precedentemente indicate. Indexing e slicing sono invece due tecniche fondamentali per accedere e manipolare i dati presenti nei tensori. 
+            L'indexing è il processo di accesso a un singolo elemento di una struttura dati utilizzando un indice, mentre lo slicing è il processo di estrazione di una sottosezione di un tensore utilizzando 
+            un intervallo di indici. Ad esempio, <code class="inline">x[0, :]</code> accederà al primo elemento della prima dimensione del tensore <i>x</i>, mentre la seconda dimensione viene presa tutta. 
+            Questo a meno che non scriviamo un indice <code class="inline">x[0, :30]</code> sulla seconda dimensione che va a limitare il numero di elementi (con indici da 0 a 29 in questo caso). 
+            <code class="inline">x[-1]</code> prende l'ultima dimensione del tensore, mentre <code class="inline">x[0, :30, None]</code> è come se applicasse anche un <code class="inline">.unsqueeze(-1)</code> 
+            all'operazione descritta prima.
             </text>
         </element>
 
@@ -73,11 +99,11 @@
             </text>
         </element>
 
-        <element id="lecture-1-title">
-            <text>Lecture 1 about Pytorch</text>
+        <element id="lecture-0-title">
+            <text>Introduction about Pytorch</text>
         </element>
 
-        <element id="lecture-1-text">
+        <element id="lecture-0-text">
             <text>
             Like all Python libraries, PyTorch must also be imported using the classic <code class="inline">import</code> keyword. As anticipated, PyTorch is able to use different hardware devices for computation. 
             One of these is the GPU. For NVIDIA users, it is sufficient to run <code class="inline">torch.cuda.is_available()</code> to check if the GPU is usable and if the drivers have been correctly installed. 
@@ -89,11 +115,11 @@
             </text>
         </element>
 
-        <element id="lecture-2-title">
-            <text>Lecture 2 about Pytorch</text>
+        <element id="lecture-1-title">
+            <text>Lecture 1 about Pytorch</text>
         </element>
 
-        <element id="lecture-2-text">
+        <element id="lecture-1-text">
             <text>
             Once you have learned how to create tensors, you also need to know how to use them. Many times in deep learning it is necessary to manipulate tensors, 
             change their appearance or shape so that they are compatible for the operations they are going to perform. Tensors are created in memory (RAM or VRAM) 
@@ -103,6 +129,32 @@
             <b>must</b> have the same dimensions (except for the last one), is an element-wise product. The same goes for the other classic operators. Tensors have a <code class="inline">shape</code> 
             attribute that specifies how many elements each dimension of the tensor is made up of. Each tensor also has methods that perform operations on it, such as <code class="inline">.sum()</code> 
             which adds up all the values ​​in one or more specified dimensions.
+            </text>
+        </element>
+
+        <element id="lecture-2-title">
+            <text>Lecture 2 about Pytorch</text>
+        </element>
+
+        <element id="lecture-2-text">
+            <text>
+            As we move forward with the lessons, we will highlight the importance of setting a manual seed via <code class="inline">torch.manual_seed(42)</code>. 
+            This allows us to ensure reproducibility between one experiment and another. What we want to focus on now are the automations that PyTorch relies on, in particular 
+            those that occur when we perform operations between tensors. The methods <code class="inline">.squeeze(dim=-1)</code> and <code class="inline">.unsqueeze(dim=-1)</code> 
+            allow us to add a dimension to the tensor at the position specified by <code class="inline">dim</code>. It should be remembered from geometry that the matrix product between 
+            two matrices is possible only if the last dimension of the first matrix is ​​equal to the first dimension of the second, but in PyTorch there is a shortcut to make this concept more relaxed. 
+            Broadcasting allows you to perform arithmetic operations on tensors of different shapes so that the dimensions of the matrices are compatible for computation. 
+            This is done without the need to replicate the data, but through a conceptual process that "expands" the tensors so that they have compatible shapes. 
+            The first rule of broadcasting is that the dimensions of the tensors are compared starting from the last dimension and proceeding towards the initial dimension; 
+            two dimensions are compatible if they are equal, or if one of the dimensions is 1. How does Broadcasting work in PyTorch? If one dimension of a tensor is 1, the tensor can be 
+            "expanded" along that dimension so that it becomes compatible with the other. If a dimension of one of the tensors is missing, it is assumed to be 1 and can be subjected to the same process. 
+            Broadcasting does not involve the physical creation of new tensors; rather, it is a logical view of the data that allows efficient operations without duplication. So, even if the dimensions of 
+            the tensors are not exactly equal, they can be compatible if the dimensions are "broadcastable" according to the rules previously indicated. Indexing and slicing are instead two fundamental 
+            techniques to access and manipulate the data present in the tensors. Indexing is the process of accessing a single element of a data structure using an index, while slicing is the process of 
+            extracting a subsection of a tensor using a range of indices. For example, <code class="inline">x[0, :]</code> will access the first element of the first dimension of the tensor <i>x</i>, 
+            while the second dimension is taken in its entirety. This is unless we write an index <code class="inline">x[0, :30]</code> on the second dimension that limits the number of elements 
+            (with indices from 0 to 29 in this case). <code class="inline">x[-1]</code> takes the last dimension of the tensor, while <code class="inline">x[0, :30, None]</code> is as if it also applies an 
+            <code class="inline">.unsqueeze(-1)</code> to the operation described above.
             </text>
         </element>
 

@@ -23,80 +23,55 @@
         <a href="index.html"> <img src="media/images/LOGOPNG.png" alt="Il Tuo Logo"> </a>
         <nav>
             <div class="header__container">
-                <label class="switch">
-                    <input type="checkbox" id="darkModeToggle">
-                    <span class="switch__slider">
-                        <span class="switch__icon">
-                            <i class="fa fa-sun icon-light"></i>
-                            <i class="fa fa-moon icon-dark"></i>
+                <button class="menu-toggle" id="menuToggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+        
+                <div class="nav-content">
+                    <ul class="nav-links">
+                        <li><a href="#Intro" class="nav-link" data-translate="link-intro"></a></li>
+                        <li><a href="#lecture0" class="nav-link">0</a></li>
+                        <li><a href="#lecture1" class="nav-link">1</a></li>
+                        <li><a href="#lecture2" class="nav-link">2</a></li>
+                        <li><a href="#lecture3" class="nav-link">3</a></li>
+                        <li><a href="#lecture4" class="nav-link">4</a></li>
+                        <li><a href="#lecture5" class="nav-link">5</a></li>
+                    </ul>
+                </div>
+        
+                <div class="nav-controls">
+                    <label class="switch">
+                        <input type="checkbox" id="darkModeToggle">
+                        <span class="switch__slider">
+                            <span class="switch__icon">
+                                <i class="fa fa-sun icon-light"></i>
+                                <i class="fa fa-moon icon-dark"></i>
+                            </span>
                         </span>
-                    </span>
-                </label>
-                
-                <select id="languageSelector" class="form-control">
-                    <option value="it">🇮🇹</option>
-                    <option value="en">🇬🇧</option>
-                </select>
-
-                <ul class="social__list ">
-                    <li class="social__list-item">
-                        <a href="https://youtube.com/ProjectoOfficial" target="_blank" class="header__icon">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </li>
-                    <li class="social__list-item">
-                        <a href="https://www.tiktok.com/@officialprojecto" target="_blank" class="header__icon">
-                            <i class="fab fa-tiktok"></i>
-                        </a>
-                    </li>
-                    <li class="social__list-item">
-                        <a href="https://www.facebook.com/MiniProjectsOfficial" target="_blank" class="header__icon">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="social__list-item">
-                        <a href="https://instagram.com/officialprojecto" target="_blank" class="header__icon">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                </ul>
-
-                <ul class="support__list ">
-                    <li class="support__list-item">
-                        <a href="https://www.paypal.com/donate/?hosted_button_id=7LRZRJ9J4PAXY" target="_blank" class="header__icon">
-                            <i class="fab fa-paypal"></i>
-                        </a>
-                    </li>
-                    <li class="support__list-item">
-                        <a href="https://www.amazon.it/ideas/amzn1.account.AFUWT7CWTZ6BHSCHJBGURRVVTWWA?ref=idea_yil_tab" target="_blank" class="header__icon">
-                            <i class="fab fa-amazon"></i>
-                        </a>
-                    </li>
-                    <li class="support__list-item">
-                        <a href="http://www.amazon.it/joinstudent?tag=projecto-21" target="_blank" class="header__icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </a>
-                    </li>
-                    <li class="support__list-item">
-                        <a href="https://www.ebay.it/usr/officialprojecto" target="_blank" class="header__icon">
-                            <i class="fab fa-ebay"></i>
-                        </a>
-                    </li>
-                </ul>
+                    </label>
+                    <select id="languageSelector" class="form-control">
+                        <option value="it">🇮🇹</option>
+                        <option value="en">🇬🇧</option>
+                    </select>
+                </div>
+        
+                <div class="social-icons">
+                    <a href="https://youtube.com/ProjectoOfficial" target="_blank" class="header__icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@officialprojecto" target="_blank" class="header__icon">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.facebook.com/MiniProjectsOfficial" target="_blank" class="header__icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com/officialprojecto" target="_blank" class="header__icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
             </div>
-            
-            <div class="sections"> 
-                <ul>
-                    <li><a href="#Intro" data-translate="link-intro"></a></li>
-                    <li><a href="#lecture1">1</a></li>
-                    <li><a href="#lecture2">2</a></li>
-                    <li><a href="#lecture3">3</li>
-                    <li><a href="#lecture4">4</a></li>
-                    <li><a href="#lecture5">5</a></li>
-                    <li><a href="#lecture6">6</a></li>
-                </ul>
-            </div>
-
         </nav>
     </header>
 
@@ -107,9 +82,9 @@
                 <p data-translate="introduction-text"></p>
             </section>
 
-            <section id="lecture1" class="section">
-                <h2 data-translate="lecture-1-title"></h2>
-                <p data-translate="lecture-1-text"> </p>
+            <section id="lecture0" class="section">
+                <h2 data-translate="lecture-0-title"></h2>
+                <p data-translate="lecture-0-text"> </p>
                 <div class="code_container">
                     <pre>
                     <code class="language-python">
@@ -186,9 +161,9 @@
                 </div>
             </section>
 
-            <section id="lecture2" class="section">
-                <h2 data-translate="lecture-2-title"></h2>
-                <p data-translate="lecture-2-text"> </p>
+            <section id="lecture1" class="section">
+                <h2 data-translate="lecture-1-title"></h2>
+                <p data-translate="lecture-1-text"> </p>
                 <div class="code_container">
                     <pre>
                     <code class="language-python">
@@ -268,16 +243,137 @@
                 </div>
             </section>
 
+            <section id="lecture2" class="section">
+                <h2 data-translate="lecture-2-title"></h2>
+                <p data-translate="lecture-2-text"> </p>
+                <div class="code_container">
+                    <pre>
+                    <code class="language-python">
+    import torch
+
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    
+    # since we will use random tensors, it is better to fix the seed
+    torch.manual_seed(42)
+    
+    
+    ################### BROADCASTING
+    # Here broadcasting is automatically done. What happen under the hood is that the
+    # smaller tensor is expanded to match the shape of the larger tensor.
+    def broadcasting():
+        z = torch.ones([2, 2], dtype=torch.float32, device=device)
+        y = torch.rand([2, 1], dtype=torch.float32, device=device)
+    
+        print(z * 3)
+    
+        # The previous is equivalent to the following
+        print(z * torch.tensor([3, 3], dtype=torch.float32, device=device))
+    
+        # Broadcast takes place also with tensors of different shapes
+        print(z * y)
+    
+        # The previous is equivalent to the following
+        print(z * y.expand(z.shape))
+    
+        # We can even drop the last dimension of y that it will be still automatically broadcasted
+        print(y.squeeze().shape)
+        print(z * y.squeeze())
+    
+        # it works even if z is multi-dimensional, as long as its dimensions are multiples of y's dimensions
+        z = torch.ones([2, 2, 4, 2], dtype=torch.float32, device=device)
+        y = torch.ones([2], dtype=torch.float32, device=device) * 2
+        print(z * y.squeeze())
+    
+        # it does not work if the dimensions are not multiples
+        try:
+            z = torch.ones([2, 2, 4, 2], dtype=torch.float32, device=device)
+            y = torch.ones([3], dtype=torch.float32, device=device) * 2
+            print(z * y.squeeze())
+        except RuntimeError as e:
+            print(e)
+    
+    ################### SQUEEZE AND UNSQUEEZE
+    # Squeeze removes all the dimensions of size 1
+    def squeeze_unsqueeze():
+        z = torch.ones([2, 1, 2, 1], dtype=torch.float32, device=device)
+        print(z.squeeze().shape)
+    
+        # squeeze can take a dimension as argument
+        print(z.squeeze(1).shape)
+    
+        # Unsqueeze adds a dimension of size 1
+        z = torch.ones([2, 2], dtype=torch.float32, device=device)
+        print(z.unsqueeze(0).shape)
+    
+    ################### INDEXING AND SLICING
+    def indexing_slicing():
+        # Indexing and slicing works as in numpy
+        z = torch.ones([10, 2, 3], dtype=torch.float32, device=device)
+    
+        # get the first row
+        print(z[:, 0])
+        # get the first column
+        print(z[0, :])
+        # get the last dimension
+        print(z[..., -1])
+    
+        # we can also use boolean masks
+        z = torch.tensor([-1, 9, 3, -34, 12], dtype=torch.float32, device=device)
+        mask = z > 0
+        print(z[mask])
+    
+        # we can also use the where function: where(condition, x, y)
+        # torch.where returns x if condition is True, y otherwise
+        print(torch.where(mask, z, torch.zeros_like(z)))
+    
+        # we can also use the gather function
+        # gather(input, dim, index)
+        # input: tensor from which to gather values
+        # dim: the dimension along which to index
+        # index: the indices of the values to gather
+        z = torch.tensor([[1, 2], [3, 4], [5, 6]], dtype=torch.float32, device=device)
+        print(torch.gather(z, 1, torch.tensor([[0], [1], [0]], device=device)))
+        
+    
+    if __name__ == "__main__":
+        # broadcasting()
+        # squeeze_unsqueeze()
+        indexing_slicing()
+                    </code>
+                    <button class="copy-label" id="copyButton" title="Copia codice">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                    <div class="feedback" id="feedback">Copiato!</div>        
+                    </pre>
+
+
+                    <div class="video_container">
+                        <iframe src="https://www.youtube.com/embed/zmT8tg71ak8"></iframe>
+                    </div>
+                </div>
+            </section>
+
         </div>
         <button id="scrollToTopBtn" data-translate="button_scrollup"></button>
 </body>
 
 <footer>
-    <p>Manually Translated Website - Last Update: 20/aug/2024</p>
+    <p>Manually Translated Website - Last Update: 22/aug/2024</p>
     <p>&copy; 2024 ProjectoOfficial.github.io</p>
 </footer>
 
 <script>
+    document.getElementById('menuToggle').addEventListener('click', function() {
+    document.querySelector('.nav-content').classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+            document.querySelector('.nav-content').classList.remove('active');
+        });
+    });
+
     document.addEventListener('DOMContentLoaded', () => {
             hljs.highlightAll();
         });

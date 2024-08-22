@@ -60,3 +60,9 @@
     background-color: #343a40; 
     border-color: #343a40; 
 }
+
+.dark-mode .pre video_container{
+    background-color: #111111;  
+    color: #fff; 
+    transition: background-color 0.5s, color 0.5s;
+}
