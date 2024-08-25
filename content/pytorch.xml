@@ -78,7 +78,61 @@
             </text>
         </element>
 
+        <element id="lecture-3-title">
+            <text>Lezione 3 di PyTorch</text>
+        </element>
+
+        <element id="lecture-3-text">
+            <text>
+            ToDo
+            </text>
+        </element>
+
+
+        <element id="lecture-4-title">
+            <text>Lezione 4 di PyTorch</text>
+        </element>
+
+        <element id="lecture-4-text">
+            <text>
+            Una delle cose più importanti da sapere in PyTorch è: come ottimizzare dei parametri. Lo scopo di PyTorch è proprio questo, e per cominciare bisogna definire un numero fisso di epoche, 
+            un numero che definisce quante volte l'intero dataset deve essere iterato per ottimizzare i parametri della rete neurale. Un'altro aspetto fondamentale è conoscere la dimensione del 
+            proprio input, e definire il numero di parametri di ogni layer della rete neurale. In questo esempio andremo a utilizzare come dati in input alla rete neurale, dei dati generati randomicamente, 
+            ma nella lezione 5 su TorchVision, vedremo come utilizzare il dataset MNIST. Bisogna ricordare che creare un tensore in questo modo <code class="inline">torch.randn(N, input_dimension, device=device)</code>, 
+            ovvero specificando il device all'interno del metodo, consente di creare il tensore direttamente in GPU (più efficiente). Anche i parametri della rete neurale saranno tensori generati a random, ma in questo 
+            caso sarà necessario settare l'attributo <code class="inline">requires_grad=True</code> per abilitare il calcolo del gradiente. Il gradiente, una volta calcolato, sarà un attributo del tensore. 
+            La discesa del gradiente è un metodo di ottimizzazione numerica, utilizzato in tanti campi della scienza, Deep Learning incluso. In pratica, la direzione del gradiente punta verso la direzione di minimo 
+            di una funzione, in questo caso della funzione di costo. Minimizzare una funzione di costo come una MSE Loss, significa ridurre la distanza tra le predizioni e le ground truth (il nostro obiettivo). 
+            Il gradiente non può essere usato da solo, ma è necessario specificare anche l'ampiezza dello step nella direzione del gradiente. Omettere lo step size significa impostarlo ad 1, valore troppo grande 
+            che porta l'algoritmo a divergere. Tramite <code class="inline">torch.matmul(input_data, w1)</code> si applicano i "pesi" o i parametri del primo layer della rete all'input, ottenendo un embedding, e 
+            stessa cosa si fa con il secondo layer. I valori in output sono confrontati, tramite una MSE loss, con i valori di ground truth, e poi si chiama il metodo <code class="inline">loss.backward()</code> 
+            per lanciare il calcolo del gradiente. <code class="inline">with torch.no_grad()</code> è necessario utilizzarlo per evitare che pytorch vada ad allocare spazio per gradienti ulteriori dovuti alle 
+            operazioni di aggiornamento dei pesi. Per aggiornare i pesi si sottrae il gradiente moltiplicato per lo step size, poi si resettano i gradienti dei parametri della rete, e si ripete il training loop.
+            </text>
+        </element>
+
+        <element id="lecture-5-title">
+            <text>Lezione 5 di PyTorch</text>
+        </element>
+
+        <element id="lecture-5-text">
+            <text>
+            ToDo
+            </text>
+        </element>
+
+        <element id="lecture-6-title">
+            <text>Lezione 6 di PyTorch</text>
+        </element>
+
+        <element id="lecture-6-text">
+            <text>
+            ToDo
+            </text>
+        </element>
+
     </translation>
+    
 
     <translation lang="en">
         <element id="link-intro">
@@ -124,11 +178,11 @@
             Once you have learned how to create tensors, you also need to know how to use them. Many times in deep learning it is necessary to manipulate tensors, 
             change their appearance or shape so that they are compatible for the operations they are going to perform. Tensors are created in memory (RAM or VRAM) 
             contiguously and the <code class="inline">stride</code> attribute of each tensor describes how to scroll through it. The stride indicates, for each dimension, 
-            the number of consecutive values ​​that constitute the dimensional elements of the tensor. Each tensor also has a <code class="inline">dtype</code> that defines the 
-            type and number of bytes that express the values ​​of the tensor. The classic product performed via the <code class="inline">*</code> operator between two tensors, which 
+            the number of consecutive values that constitute the dimensional elements of the tensor. Each tensor also has a <code class="inline">dtype</code> that defines the 
+            type and number of bytes that express the values of the tensor. The classic product performed via the <code class="inline">*</code> operator between two tensors, which 
             <b>must</b> have the same dimensions (except for the last one), is an element-wise product. The same goes for the other classic operators. Tensors have a <code class="inline">shape</code> 
             attribute that specifies how many elements each dimension of the tensor is made up of. Each tensor also has methods that perform operations on it, such as <code class="inline">.sum()</code> 
-            which adds up all the values ​​in one or more specified dimensions.
+            which adds up all the values in one or more specified dimensions.
             </text>
         </element>
 
@@ -142,7 +196,7 @@
             This allows us to ensure reproducibility between one experiment and another. What we want to focus on now are the automations that PyTorch relies on, in particular 
             those that occur when we perform operations between tensors. The methods <code class="inline">.squeeze(dim=-1)</code> and <code class="inline">.unsqueeze(dim=-1)</code> 
             allow us to add a dimension to the tensor at the position specified by <code class="inline">dim</code>. It should be remembered from geometry that the matrix product between 
-            two matrices is possible only if the last dimension of the first matrix is ​​equal to the first dimension of the second, but in PyTorch there is a shortcut to make this concept more relaxed. 
+            two matrices is possible only if the last dimension of the first matrix is equal to the first dimension of the second, but in PyTorch there is a shortcut to make this concept more relaxed. 
             Broadcasting allows you to perform arithmetic operations on tensors of different shapes so that the dimensions of the matrices are compatible for computation. 
             This is done without the need to replicate the data, but through a conceptual process that "expands" the tensors so that they have compatible shapes. 
             The first rule of broadcasting is that the dimensions of the tensors are compared starting from the last dimension and proceeding towards the initial dimension; 
@@ -155,6 +209,58 @@
             while the second dimension is taken in its entirety. This is unless we write an index <code class="inline">x[0, :30]</code> on the second dimension that limits the number of elements 
             (with indices from 0 to 29 in this case). <code class="inline">x[-1]</code> takes the last dimension of the tensor, while <code class="inline">x[0, :30, None]</code> is as if it also applies an 
             <code class="inline">.unsqueeze(-1)</code> to the operation described above.
+            </text>
+        </element>
+
+        <element id="lecture-3-title">
+            <text>Lecture 3 about PyTorch</text>
+        </element>
+
+        <element id="lecture-3-text">
+            <text>
+            ToDo
+            </text>
+        </element>
+
+        <element id="lecture-4-title">
+            <text>Lecture 4 about Pytorch</text>
+        </element>
+
+        <element id="lecture-4-text">
+            <text>
+            One of the most important things to know in PyTorch is: how to optimize parameters. This is the purpose of PyTorch, and to start you need to define a fixed number of epochs, a number that defines how 
+            many times the entire dataset must be iterated to optimize the parameters of the neural network. Another fundamental aspect is to know the size of your input, and define the number of parameters of 
+            each layer of the neural network. In this example we are going to use randomly generated data as input data to the neural network, but in lesson 5 on TorchVision, we will see how to use the MNIST dataset. 
+            It is important to remember that creating a tensor in this way <code class="inline">torch.randn(N, input_dimension, device=device)</code>, that is, specifying the device inside the method, allows you to 
+            create the tensor directly in the GPU (more efficient). The parameters of the neural network will also be randomly generated tensors, but in this case it will be necessary to set the attribute 
+            <code class="inline">requires_grad=True</code> to enable the gradient calculation. The gradient, once calculated, will be an attribute of the tensor. Gradient descent is a numerical optimization method, 
+            used in many fields of science, including Deep Learning. In practice, the direction of the gradient points towards the minimum direction of a function, in this case the cost function. Minimizing a cost 
+            function such as an MSE Loss, means reducing the distance between the predictions and the ground truth (our goal). The gradient cannot be used alone, but it is also necessary to specify the size of the 
+            step in the direction of the gradient. Omitting the step size means setting it to 1, a value too large that causes the algorithm to diverge. Using <code class="inline">torch.matmul(input_data, w1)</code> 
+            you apply the "weights" or parameters of the first layer of the network to the input, obtaining an embedding, and the same thing is done with the second layer. The output values are compared, via an MSE loss, 
+            with the ground truth values, and then the method <code class="inline">loss.backward()</code> is called to launch the gradient calculation. <code class="inline">with torch.no_grad()</code> is necessary to 
+            use it to avoid that pytorch allocates space for additional gradients due to the weight update operations. To update the weights you subtract the gradient multiplied by the step size, then you reset the 
+            gradients of the network parameters, and repeat the training loop.
+            </text>
+        </element>
+
+        <element id="lecture-5-title">
+            <text>Lecture 5 about PyTorch</text>
+        </element>
+
+        <element id="lecture-5-text">
+            <text>
+            ToDo
+            </text>
+        </element>
+
+        <element id="lecture-6-title">
+            <text>Lecture 6 about PyTorch</text>
+        </element>
+
+        <element id="lecture-6-text">
+            <text>
+            ToDo
             </text>
         </element>
 

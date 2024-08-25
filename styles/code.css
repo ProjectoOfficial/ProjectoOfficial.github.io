@@ -70,10 +70,10 @@ code {
 }
 
 .inline {
-    display: inline; /* Assicura che l'elemento si comporti come inline */
+    display: inline; 
     padding: 2px 4px;
     background-color: transparent;
-    white-space: nowrap; /* Impedisce che il testo vada a capo */
+    white-space: nowrap; 
 }
 
 #copyButton {
