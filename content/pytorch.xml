@@ -84,7 +84,14 @@
 
         <element id="lecture-3-text">
             <text>
-            ToDo
+            Il codice di questa lezione non è presente su github, infatti lì le videolezioni successive corrisponderanno a un indice in meno nell'enumerazione. Questo è un approfondimento su come i tensori sono 
+            salvati in memoria, e come vengono letti in modo tale da avere una shape coerente con quella desiderata da chi programma. Come primo metodo, vediamo <code class="inline">torch.as_strided(...)</code>, 
+            questo ci consente di creare una view (non un nuovo tensore o una copia, i dati in memoria rimangono uguali) del tensore precedentemente creato. In pratica, ho dei dati in memoria disposti in modo 
+            sequenziale o casuale, e i parametri di una view esplicitano come questi dati debbano essere letti per comporre il tensore che desideriamo. Ogni tensore ha ad esempio un attributo<code class="inline">.stride()</code> 
+            i cui valori, per ogni dimensione, esplicitano di quanto spostarsi per leggere il successivo insieme di elementi del tensore per tale dimensione. Una cosa importante per l'efficienza è che i dati in memoria 
+            siano contigui, questo significa che il tensore non è frammentato in locazioni diverse in memoria. Se capita di svolgere un <code class="inline">torch.permute()</code>  può darsi che i dati non siano più contigui, 
+            e in questo caso conviene chiamare <code class="inline">.contiguous()</code>. Venendo alla differenza tra <code class="inline">.view()</code> e <code class="inline">reshape()</code>, il primo opera su dati 
+            contigui mentre il secondo anche su dati non contigui e può restituire una copia del tensore originale. Infine vi lascio con un po' di metodi per cambiare device di esecuzione del codice.
             </text>
         </element>
 
@@ -117,7 +124,20 @@
 
         <element id="lecture-5-text">
             <text>
-            ToDo
+            In questa lezione faremo le stesse cose di quella precedente, però siccome è inutile sprecare tempo a creare una rete partendo dalle singole elementi, ed è ugualmente inutile ottimizzarla a mano, 
+            vedremo come PyTorch rende questo meccanismo automatico. PyTorch è una libreria il cui punto di forza è la differenziazione automatica dei moduli della rete neurale. Questo significa che se svolgiamo 
+            operazioni tra tensori, anche le più difficili, di pensa PyTorch a calcolarsi le derivate parziali. Per sfruttare queste potenzialità, per ogni blocco della nostra rete neurale dobbiamo creare una classe, 
+            poi questa classe bisogna che erediti da <code class="inline">nn.Module</code>. Funzioni di loss, layers della rete neurale, funzioni di attivazione, e così via, sono tutti <code class="inline">nn.Module</code>. 
+            Potente vero? Diventa obbligatorio, di conseguenza, chiamare l'inizializzazione della classe padre nella funzione di inizializzazione della nostra classe con 
+            <code class="inline">super(Nome_della_classe, self).__init__()</code>. Siccome in PyTorch, molti elementi sono già pronti, possiamo importarli da 
+            <code class="inline">torch.nn</code>: <code class="inline">nn.Linear</code> è un layer di Multi-Layer Perceptron, equivalente a (W @ X + b), <code class="inline">nn.ReLU</code> è una funzione di attivazione 
+            equivalente a <code class="inline">torch.clamp()</code>, mentre <code class="inline">nn.Sequential</code> è un contenitore di layers e di funzioni di attivazione, dove l'input viene processato in modo 
+            sequenziale dagli elementi ivi inseriti. Ogni <code class="inline">nn.Module</code> ha una funzione chiamata <code class="inline">forward(self, x: torch.Tensor) -> torch.Tensor</code>, tipicamente prende 
+            in input un tensore e restituisce un tensore, ed è dove andiamo ad usare i layer del nostro blocco per processare l'input. Quando lavoriamo con le reti neurali, è fondamentale la reproducibilità degli esperimenti. 
+            Confrontare diversi training della stessa rete senza impostare il seed che viene usato per la generazione dei numeri random, non ha senso! Spesso si usa seed 42, e va impostato su tutte le librerie e dispositivi, 
+            come PyTorch, <code class="inline">torch.cuda</code>, random, numpy, ecc... . Tutto il resto dell'esempio rimane invariato, eccetto per la parte dell'ottimizzatore. Di ottimizzatori ce ne sono tanti, e in 
+            letteratura ognuno usa quello che gli pare; in questo caso noi abbiamo usato il classicissimo SGD. Lo inizializziamo con <code class="inline">torch.optim.SGD(parametri_della_rete, learning_rate)</code>, 
+            prima della backward della loss dobbiamo resettargli i gradienti, e dopo la backward chiamiamo lo step di ottimizzazione.
             </text>
         </element>
 
@@ -218,7 +238,14 @@
 
         <element id="lecture-3-text">
             <text>
-            ToDo
+            The code for this lesson is not on github, in fact the following video lessons will correspond to one less index in the enumeration. This is an in-depth look at how tensors are saved in memory, and how 
+            they are read in such a way as to have a shape consistent with the one desired by the programmer. As a first method, let's see <code class="inline">torch.as_strided(...)</code>, this allows us to create 
+            a view (not a new tensor or a copy, the data in memory remains the same) of the previously created tensor. In practice, I have data in memory arranged sequentially or randomly, and the parameters of a 
+            view specify how this data must be read to compose the tensor we want. For example, each tensor has an attribute <code class="inline">.stride()</code> whose values, for each dimension, specify how much 
+            to move to read the next set of elements of the tensor for that dimension. An important thing for efficiency is that the data in memory is contiguous, this means that the tensor is not fragmented in 
+            different locations in memory. If you happen to execute a <code class="inline">torch.permute()</code> it may be that the data is no longer contiguous, and in this case it is better to call 
+            <code class="inline">.contiguous()</code>. Coming to the difference between <code class="inline">.view()</code> and <code class="inline">reshape()</code>, the first operates on contiguous data while the 
+            second also on non-contiguous data and can return a copy of the original tensor. Finally I leave you with a few methods to change the device of execution of the code.
             </text>
         </element>
 
@@ -250,7 +277,19 @@
 
         <element id="lecture-5-text">
             <text>
-            ToDo
+            In this lesson we will do the same things as the previous one, but since it is useless to waste time creating a network starting from the single elements, and it is equally useless to optimize it by hand, we will see 
+            how PyTorch makes this mechanism automatic. PyTorch is a library whose strong point is the automatic differentiation of the neural network modules. This means that if we perform operations between tensors, even the 
+            most difficult ones, PyTorch takes care of calculating the partial derivatives. To exploit this potential, for each block of our neural network we must create a class, then this class must inherit from 
+            <code class="inline">nn.Module</code>. Loss functions, neural network layers, activation functions, and so on, are all <code class="inline">nn.Module</code>. Powerful, right? It becomes mandatory, therefore, 
+            to call the initialization of the parent class in the initialization function of our class with <code class="inline">super(Class_Name, self).__init__()</code>. Since in PyTorch, many elements are already ready, 
+            we can import them from <code class="inline">torch.nn</code>: <code class="inline">nn.Linear</code> is a Multi-Layer Perceptron layer, equivalent to (W @ X + b), <code class="inline">nn.ReLU</code> is an activation 
+            function equivalent to <code class="inline">torch.clamp()</code>, while <code class="inline">nn.Sequential</code> is a container of layers and activation functions, where the input is processed sequentially by the 
+            elements inserted there. Each <code class="inline">nn.Module</code> has a function called <code class="inline">forward(self, x: torch.Tensor) -> torch.Tensor</code>, typically it takes a tensor as input and returns 
+            a tensor, and this is where we use the layers of our block to process the input. When working with neural networks, reproducibility of experiments is essential. Comparing different trainings of the same network without 
+            setting the seed that is used for the generation of random numbers, makes no sense! Often seed 42 is used, and it must be set on all libraries and devices, such as PyTorch, <code class="inline">torch.cuda</code>, 
+            random, numpy, etc... . All the rest of the example remains unchanged, except for the optimizer part. There are many optimizers, and in the literature everyone uses the one they like; in this case we used the very 
+            classic SGD. We initialize it with <code class="inline">torch.optim.SGD(network_parameters, learning_rate)</code>, before the backward of the loss we have to reset its gradients, and after the backward we call the 
+            optimization step.
             </text>
         </element>
 

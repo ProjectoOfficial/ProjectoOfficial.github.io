@@ -360,9 +360,49 @@
                     <pre>
                     <code class="language-python">
 
+    import torch
 
-                    ToDo
-
+    # Let's start creating a tensor
+    x = torch.tensor([[1,2,3,4], [5,6,7,8], [9,10,11,12]])
+    
+    # The shape of our tensor will be [3, 4]
+    # keep it in memory for later
+    print(x.shape)
+    
+    # this method will create a VIEW of the existing tensor
+    # considering the size, stride and offset we set.
+    print(torch.as_strided(x, [3, 3], (2, 2)))
+    
+    # the stride of the original tensor is [4, 1]
+    # for each 4 column and 1 row of the elements in memory
+    # print a row of the actual x tensor the way we wanted it.
+    print(x.stride())
+    
+    # the tensor elements may be fragmented in memory, this could lead to
+    # inefficiencies during operations between tensors. This method 
+    # reorganizes the tensor to have all elements placed contiguously
+    # within physical memory. This creates a copy of the tensor
+    x.contiguous()
+    
+    # both of these methods change the shape of the tensor, BUT view operates
+    # only on contiguous tensors, while reshape also on non-contiguous tensor,
+    # and may return a copy of the original tensor. Thus use view whenever is possible
+    print(x.view([1, -1]))
+    print(torch.reshape(x, [1, -1]))
+    
+    # You can run operation between tensors on different devices. If you want to use
+    # CUDA you can call the following methods
+    
+    print(torch.cuda.is_available())
+    print(torch.cuda.get_device_name(0)) # 0 is the gpu ID
+    
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    
+    # move the tensor on the gpu
+    x = x.to(device)
+    
+    # create the tensor directly in GPU (more efficient when possible)
+    x = torch.tensor([[1,2,3,4], [5,6,7,8], [9,10,11,12]], device=device)
 
                     </code>
                     <button class="copy-label" id="copyButton" title="Copia codice">
