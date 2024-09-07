@@ -147,7 +147,38 @@
 
         <element id="lecture-6-text">
             <text>
-            ToDo
+            Torchvision è una libreria del framework di PyTorch che mette a disposizione strumenti utili a lavorare con immagini. In particolare, in Torchvision si possono trovare anche alcuni dataset utilizzati 
+            in ricerca scientifica come proxy per valutare le performance delle reti neurali prima di allenarle su dataset molto grandi come ImageNet. Importando un qualsiasi dataset da Torchvision, come 
+            <code class="inline">MNIST</code> (dataset composto da immagini di cifre scritti a mano), è possibile creare un Dataloader iterabile da utilizzare all'interno di ogni epoca per prelevare immagini 
+            e label da fornire in input alla rete neurale. Il parametro booleano <code class="inline">train</code>, della classe <code class="inline">MNIST</code> specifica se vogliamo utilizzare il dataset di 
+            train o di test (50000 immagini e 10000 immagini, rispettivamente). Il parametro boolean <code class="inline">download</code> ci consente di scegliere se lasciare a Torchvision il compito di scaricare 
+            e spacchettare il dataset, ovviamente nel percorso del filesystem specificato come primo parametro. Tramite <code class="inline">transforms.Compose</code> possiamo applicare delle trasformazioni alle 
+            immagini del dataset prima di estrarle dall'iterabile. Operazioni tipicamente svolte sono la trasformazione delle immagini in tensori e la normalizzazione dei pixel.   Nel dataloader dobbiamo invece 
+            specificare la <code class="inline">batch size</code>, ovvero quante immagini estrarre dall'iterabile per volta, e di conseguenza, su quante immagini allenare la rete per ogni sua iterazione all'interno 
+            di un epoca unitaria. Impostare lo <code class="inline">shuffle</code> dei dati in traning è molto importante, non vogliamo che si impari in modo mnemonico  l'ordine con il quale riceve in input le immagini! 
+            La <code class="inline">collate_fn</code> è invece una funzione che possiamo chiamare prima che i dati vengano forniti in output dall'iterabile, e questa viene tipicamente utilizzata per svolgere operazioni 
+            sul batch (ad esempio, spostare i dati sulla GPU).
+            </text>
+        </element>
+        
+        <element id="lecture-7-title">
+            <text>Lezione 7 di PyTorch</text>
+        </element>
+
+        <element id="lecture-7-text">
+            <text>
+            I layers convoluzionali in deep learning sono tipicamente utilizzati per processare immagini o time series, e svolgono le stesse operazioni dei layers lineari ma in modo più efficiente. 
+            Se consideriamo di dover lavorare su un immagine, ci accorgiamo presto che alcuni pattern si ripetono, inoltre se proviamo a processarla tramite un layer lineare notiamo che la nostra rete 
+            inizia ad avere tanti parametri e ad essere molto lenta. Le reti convoluzionali risolvono questi due problemi: utilizzano dei kernel (dei tensori di parametri apprendibili), che hanno una dimensione 
+            inferiore a quella dell'immagine (eccetto per il numero di canali, che deve essere lo stesso), e la processano scorrendo in termini di altezza e larghezza. Le depthwise convolution sono sempre reti 
+            convoluzionali, ma questa volta il kernel non processa tutti i canali insieme, ma gruppi di canali se non un solo canale per kernel. Questa tencnica si è rivelata, di recente, molto efficace per estrarre 
+            features più rappresentative. Per estrarre features lungo i canali, solitamente si pone in serie un'ulteriore convoluzione, con kernel di dimensione 1. Lo squeeze-and-excitation block è una soluzione 
+            migliore proposta per estrarre feature lungo i canali. Svolge, in primis, una media lungo le dimensioni spaziali dell'immagine, con lo scopo di creare dei descrittori per ogni canale, che vengono poi 
+            trasformati da un layer lineare e attivati tramite una ReLU. L'output viene poi trasformato di nuovo da un ulteriore layer lineare e attivato da una funzione sigmoide svolta lungo i canali, con lo 
+            scopo di trovare i canali che, in termini di probabilità, contengono features più rilevanti. Questo punteggio viene moltiplicato con l'immagine originale in input, andando rispetticamente a scalare 
+            i valori di ogni canale. L'architettura è composta da 4 blocchi principali, dove per blocchi si intendono un arbitrario numero di layer prima di un'operazione di riduzione spaziale delle feature maps. 
+            Per consentire al modello di generalizzare meglio, il train set viene sottoposto ad augmentation, una tecnica il cui scopo è quello di applicare delle trasformazioni ulteriori alle immagini di training 
+            per consentire al modello di generalizzare meglio. 
             </text>
         </element>
 
@@ -299,7 +330,37 @@
 
         <element id="lecture-6-text">
             <text>
-            ToDo
+            Torchvision is a library of the PyTorch framework that provides useful tools for working with images. In particular, in Torchvision you can also find some datasets used in scientific research as proxies to 
+            evaluate the performance of neural networks before training them on very large datasets such as ImageNet. By importing any dataset from Torchvision, such as <code class="inline">MNIST</code> 
+            (a dataset composed of images of handwritten digits), you can create an iterable Dataloader to be used within each epoch to pick images and labels to provide as input to the neural network. 
+            The boolean parameter <code class="inline">train</code>, of the <code class="inline">MNIST</code> class specifies whether we want to use the training or test dataset (50000 images and 10000 images, respectively). 
+            The boolean parameter <code class="inline">download</code> allows us to choose whether to let Torchvision download and unpack the dataset, obviously in the filesystem path specified as the first parameter. 
+            Using <code class="inline">transforms.Compose</code> we can apply transformations to the images in the dataset before extracting them from the iterable. Typical operations performed are the transformation 
+            of the images into tensors and the normalization of the pixels. In the dataloader we must instead specify the <code class="inline">batch size</code>, or how many images to extract from the iterable at a time, 
+            and consequently, how many images to train the network on for each iteration within a unitary epoch. Setting the <code class="inline">shuffle</code> of the data in training is very important, we do not want the 
+            order in which it receives the images as input to be learned by rote! The <code class="inline">collate_fn</code> is instead a function that we can call before the data is output from the iterable, and this is 
+            typically used to perform batch operations (for example, moving data to the GPU).
+            </text>
+        </element>
+
+        <element id="lecture-7-title">
+            <text>Lecture 6 about PyTorch</text>
+        </element>
+
+        <element id="lecture-7-text">
+            <text>
+            Convolutional layers in deep learning are typically used to process images or time series, and perform the same operations as linear layers but more efficiently. 
+            If we consider having to work on an image, we soon realize that some patterns are repeated, furthermore if we try to process it through a linear layer we notice that 
+            our network starts to have many parameters and to be very slow. Convolutional networks solve these two problems: they use kernels (tensors of learnable parameters), 
+            which have a dimension smaller than that of the image (except for the number of channels, which must be the same), and process it by sliding in terms of height and width. 
+            Depthwise convolutions are still convolutional networks, but this time the kernel does not process all the channels together, but groups of channels or even a single channel 
+            per kernel. This technique has recently proven to be very effective for extracting more representative features. To extract features along channels, an additional convolution 
+            is usually introduced, with a kernel of size 1. The squeeze-and-excitation block is a better solution proposed to extract features along channels. It first averages the spatial 
+            dimensions of the image, with the aim of creating descriptors for each channel, which are then transformed by a linear layer and activated by a ReLU. The output is then transformed 
+            again by an additional linear layer and activated by a sigmoid function performed along the channels, with the aim of finding the channels that, in terms of probability, contain more 
+            relevant features. This score is multiplied with the original input image, respectively scaling the values of each channel. The architecture is composed of 4 main blocks, where blocks 
+            are an arbitrary number of layers before a spatial reduction operation of the feature maps. To allow the model to generalize better, the training set is augmented, a technique whose 
+            aim is to apply additional transformations to the training images to allow the model to generalize better.
             </text>
         </element>
 
